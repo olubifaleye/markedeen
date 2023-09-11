@@ -77,7 +77,7 @@
 }
 
 .outline_btn {
-  @apply rounded-full bg-accent py-1.5 px-5 text-black transition-all hover:bg-secondary-blue hover:text-black hover:shadow-lg duration-300 text-center text-sm font-inter flex items-center justify-center;
+  @apply rounded-full bg-accent lg:text-lg lg:py-3 lg:px-7 md:text-xs md:py-2 md:px-6 text-black transition-all hover:bg-secondary-blue hover:text-black hover:shadow-lg duration-300 text-center font-inter flex items-center justify-center;
 }
 
 .head_text {
@@ -144,15 +144,15 @@
 } */
 
 .navbar{
-    @apply flex-between w-full mb-16 bg-primary-blue px-10;
+    @apply flex-between w-full m-auto bg-primary-blue lg:pr-10 h-full md:pr-10;
 }
 
 .nav_item{
-    @apply flex p-2 font-bold text-white max-sm:my-3
+    @apply flex lg:p-2 font-bold text-white max-md:my-3 md:p-1
 }
 
 .link_item{
-    @apply flex gap-2 flex-center
+    @apply flex-center transition ease-in duration-500 overflow-hidden md:text-xs lg:text-base
 }
 
 .header{

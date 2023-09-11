@@ -65,13 +65,6 @@
   opacity: 0.15;
 }
 
-.hamburger{
-    display: none;
-}
-
-@media screen and (max-width: 940px) {
-  
-}
 
 /* Tailwind Styles */
 
@@ -155,7 +148,7 @@
 }
 
 .nav_item{
-    @apply flex p-2 font-bold text-white
+    @apply flex p-2 font-bold text-white max-sm:my-3
 }
 
 .link_item{
@@ -163,7 +156,7 @@
 }
 
 .header{
-    @apply fixed w-full top-0 left-0 z-10 transition ease-in duration-300 overflow-hidden
+    @apply fixed w-full top-0 left-0 z-10 transition ease-in duration-500 overflow-hidden
 }
 
 

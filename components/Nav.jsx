@@ -32,7 +32,7 @@ const Nav = () => {
                     width={280}
                     height={100}
                     priority= 'true'
-                    className="object-contain"
+                    className="object-contain h-auto"
                 />
             </Link>
 
@@ -49,7 +49,7 @@ const Nav = () => {
                         width={300}
                         height={100}
                         priority= 'true'
-                        className="object-contain"
+                        className="object-contain h-auto"
                     />
                 </Link>
 
@@ -97,7 +97,7 @@ const Nav = () => {
                 </li>
 
                 <li className="nav_item">
-                    <Link href="/" className="link_item lg:pl-4 max-md:pt-44">
+                    <Link href="/" className="link_item lg:pl-4 max-md:pt-28">
                         Company Email
                     </Link>
                 </li>       

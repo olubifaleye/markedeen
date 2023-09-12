@@ -8,18 +8,19 @@
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
 */
 
-/* .main {
+.main {
   width: 100vw;
   min-height: 100vh;
   position: fixed;
   display: flex;
   justify-content: center;
-  padding: 120px 24px 160px 24px;
-  pointer-events: none;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-.main:before {
-  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%);
+/* .main:before {
   position: absolute;
   content: "";
   z-index: 2;
@@ -30,14 +31,11 @@
 
 .main:after {
   content: "";
-  background-image: url("/assets/images/grid.svg");
   z-index: 1;
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
-  opacity: 0.4;
-  filter: invert(1);
 } */
 
 .gradient {
@@ -68,20 +66,56 @@
 
 /* Tailwind Styles */
 
+.head_text {
+  @apply mt-5 mb-10 text-4xl font-normal leading-[1.15] text-black sm:text-6xl;
+}
+
+.head_text_span {
+  @apply mt-5 mb-10 text-4xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+}
+
+.outline_btn {
+  @apply rounded-full bg-accent lg:font-bold lg:text-lg lg:py-3 lg:px-7 md:px-3 md:py-2.5 max-md:text-2xl max-md:py-3.5 max-md:px-7 max-sm:px-7 max-sm:py-3.5 max-sm:text-base text-black transition-all hover:bg-secondary-blue hover:text-black hover:shadow-lg duration-300 text-center font-inter flex items-center justify-center;
+}
+
+.desc {
+  @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
+}
+
+.image{
+  @apply border-14 rounded-3xl border-box h-auto
+}
+
+/* Landing Page Component */
+
+
+.landing_container{
+  @apply grid grid-cols-2 gap-4 mt-10 mb-10
+}
+
+.left_container{
+  @apply items-center pl-32 pt-12
+}
+
+.right_container{
+  @apply items-center justify-center
+}
+
+.button_container{
+  @apply flex grid-cols-2 gap-4 mt-10 mb-10 items-center
+}
+
+.landing_pills{
+  @apply flex items-center px-4 w-fit rounded-2xl bg-box
+}
+
+
 .app {
   @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
 
 .black_btn {
   @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
-}
-
-.outline_btn {
-  @apply rounded-full bg-accent lg:text-lg lg:py-3 lg:px-7 md:text-base md:py-2 md:px-2 sm:px-6 sm:py-3.5 text-black transition-all hover:bg-secondary-blue hover:text-black hover:shadow-lg duration-300 text-center font-inter flex items-center justify-center;
-}
-
-.head_text {
-  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
 }
 
 .orange_gradient {
@@ -94,10 +128,6 @@
 
 .blue_gradient {
   @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
-}
-
-.desc {
-  @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
 }
 
 .search_input {
@@ -131,6 +161,23 @@
 }
 
 /* Nav Component */
+
+.navbar{
+  @apply flex-between w-full m-auto bg-primary-blue lg:pr-10 h-full md:pr-10;
+}
+
+.nav_item{
+  @apply flex lg:p-2 font-bold text-white max-md:my-3 md:p-1
+}
+
+.link_item{
+  @apply flex-center transition ease-in duration-500 overflow-hidden max-sm:text-base md:text-xs max-md:text-2xl lg:text-base 
+}
+
+.header{
+  @apply fixed w-full top-0 left-0 z-10 transition ease-in duration-500 overflow-hidden
+}
+
 /* .logo_text {
   @apply max-sm:hidden font-satoshi font-semibold text-lg text-black tracking-wide;
 }
@@ -142,22 +189,6 @@
 .dropdown_link {
   @apply text-sm font-inter text-gray-700 hover:text-gray-500 font-medium;
 } */
-
-.navbar{
-    @apply flex-between w-full m-auto bg-primary-blue lg:pr-10 h-full md:pr-10;
-}
-
-.nav_item{
-    @apply flex lg:p-2 font-bold text-white max-md:my-3 md:p-1
-}
-
-.link_item{
-    @apply flex-center transition ease-in duration-500 overflow-hidden md:text-xs lg:text-base
-}
-
-.header{
-    @apply fixed w-full top-0 left-0 z-10 transition ease-in duration-500 overflow-hidden
-}
 
 
 /* PromptCard Component */

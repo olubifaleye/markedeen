@@ -8,6 +8,7 @@ export const metadata = {
     description: "Aberdeen Marketing Agency"
 }
 
+//Added in Nav component to layout higher order component
 const RootLayout = ({ children }) => {
   return (
     <html lang='en'>

@@ -6,6 +6,18 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    borderWidth: {
+      DEFAULT: '1px',
+      '0': '0',
+      '2': '2px',
+      '3': '3px',
+      '4': '4px',
+      '6': '6px',
+      '8': '8px',
+      '10': '10px',
+      '12': '12px',
+      '14': '14px',
+    },
     screens: {
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
@@ -33,7 +45,8 @@ module.exports = {
         'secondary-blue' : '#0095FA',
         'tertiary-blue': '#F5F9FF',
         'accent' : '#DBA11C',
-        'accent-hover': '#EDD291'
+        'accent-hover': '#EDD291',
+        'box': '#F1F1E6',
       }
     },
   },

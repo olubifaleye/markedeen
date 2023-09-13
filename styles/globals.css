@@ -11,13 +11,14 @@
 .main {
   width: 100vw;
   min-height: 100vh;
-  position: fixed;
-  display: flex;
   justify-content: center;
   padding-top: 120px;
   padding-bottom: 80px;
   padding-left: 40px;
   padding-right: 40px;
+  max-width: 100%;
+  overflow-x: hidden;
+
 }
 
 /* .main:before {
@@ -63,16 +64,60 @@
   opacity: 0.15;
 }
 
+.landing-image{
+  border-radius: 10%;
+  border-width: 14px;
+  border-color: #F1F1E6;
+  margin-top: 5%;
+}
+
+.pill-1{
+  left: 9%;
+}
+
+.pill-2{
+  left: 50%
+}
+
+.pill-3{
+  bottom: -3%;
+  left: 9%;
+}
+
+.pill-4{
+  left: 45%;
+  bottom: -5%;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1200px) and (max-width: 100vw) {
+  .IconSizes {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 940px) and (max-width: 1200px) {
+  .IconSizes {
+    font-size: 1rem;
+  }
+}
+
 
 /* Tailwind Styles */
 
 .head_text {
-  @apply mt-5 mb-10 text-4xl font-normal leading-[1.15] text-black sm:text-6xl;
+  @apply mt-5 mb-10 lg:text-5xl md:text-4xl font-normal leading-[1.15] text-black;
 }
 
 .head_text_span {
-  @apply mt-5 mb-10 text-4xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+  @apply mt-5 mb-10 lg:text-5xl md:text-4xl font-extrabold leading-[1.15] text-black;
 }
+
+.sub_head_text {
+  @apply mt-5 mb-10 lg:text-2xl md:text-2xl font-semibold leading-[1.15] text-black;
+}
+
 
 .outline_btn {
   @apply rounded-full bg-accent lg:font-bold lg:text-lg lg:py-3 lg:px-7 md:px-3 md:py-2.5 max-md:text-2xl max-md:py-3.5 max-md:px-7 max-sm:px-7 max-sm:py-3.5 max-sm:text-base text-black transition-all hover:bg-secondary-blue hover:text-black hover:shadow-lg duration-300 text-center font-inter flex items-center justify-center;
@@ -83,31 +128,40 @@
 }
 
 .image{
-  @apply border-14 rounded-3xl border-box h-auto
+  @apply border-14 rounded-3xl border-box mt-24
 }
 
 /* Landing Page Component */
 
 
 .landing_container{
-  @apply grid grid-cols-2 gap-4 mt-10 mb-10
+  @apply grid grid-cols-2 max-md:grid-cols-1 mt-10 mb-80
+}
+
+.image_container{
+  @apply grid grid-cols-2 gap-4 mt-10 mb-10 absolute w-full
 }
 
 .left_container{
-  @apply items-center pl-32 pt-12
+  @apply items-center pl-20 pt-12 max-md:pl-20
 }
 
 .right_container{
-  @apply items-center justify-center
+  @apply items-center justify-center mt-4 ml-4 relative
 }
+
 
 .button_container{
   @apply flex grid-cols-2 gap-4 mt-10 mb-10 items-center
 }
 
 .landing_pills{
-  @apply flex items-center px-4 w-fit rounded-2xl bg-box
+  @apply flex items-center lg:px-4 md:px-2 lg:py-4 md:py-3 z-10 w-fit rounded-2xl bg-box absolute
 }
+
+
+
+
 
 
 .app {
@@ -175,7 +229,7 @@
 }
 
 .header{
-  @apply fixed w-full top-0 left-0 z-10 transition ease-in duration-500 overflow-hidden
+  @apply fixed w-full top-0 left-0 z-10 transition ease-in duration-500 overflow-hidden z-20
 }
 
 /* .logo_text {

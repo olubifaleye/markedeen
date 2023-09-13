@@ -5,6 +5,7 @@ import Link from "next/link";
 import '@styles/globals.css';
 import Image from "next/image";
 import {FaRegWindowMaximize, FaCircle, FaInstagram, FaFacebook, FaTwitterSquare} from 'react-icons/fa';
+import { IconContext } from "react-icons";
 
 
 const LandingPage = () => {
@@ -42,63 +43,68 @@ const LandingPage = () => {
         </div>
 
         <div className="right_container">
+            <div className="!relative block">
+                <div className="absolute">
 
-            <div className="landing_container">
+                    <IconContext.Provider value={{ className: "IconSizes" }}>
+                        <div className="landing_pills pill-1 mt-2 drop-shadow-lg">
+                            <FaRegWindowMaximize />
+                            <p className="lg:pl-4 md:pl-2">Get a Website</p>
+                        </div>
+                    </IconContext.Provider>
 
-                <div className="landing_pills">
-                    <FaRegWindowMaximize  size={24}/>
-                    <p className="pl-4">Get a Website</p>
+                    <IconContext.Provider value={{ className: "IconSizes" }}>
+                        <div className="landing_pills pill-2 drop-shadow-lg">
+                            <ul>
+                                <li className="flex pb-2">
+                                    <FaCircle style={{color: '#0095FA'}} />
+                                    <p className="lg:pl-4 md:pl-2">Boost reputation</p>
+                                </li>
+
+                                <li className="flex">
+                                    <FaCircle style={{color: '#DBA11C'}} /> 
+                                    <p className="lg:pl-4 md:pl-2">Improve rankings</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </IconContext.Provider>   
+
+                    <Image 
+                        src="/assets/images/HappyMan.png"
+                        alt="Markedeen Landing Page Image"
+                        width={540}
+                        height={480}
+                        priority= 'true'
+                        className="landing-image"
+                        
+                    />
+
+                    <IconContext.Provider value={{ className: "IconSizes" }}>
+                        <div className="landing_pills gap-4 py-4 pill-3 drop-shadow-lg">
+                            <FaInstagram />
+                            <FaFacebook />
+                            <FaTwitterSquare />
+                        </div>
+                    </IconContext.Provider>
+
+                    <IconContext.Provider value={{ className: "IconSizes" }}>
+                        <div className="landing_pills pill-4 py-2 drop-shadow-lg">
+                            <ul>
+                                <li className="flex pb-2">
+                                    <FaCircle size={24} style={{color: '#0095FA'}} /> 
+                                    <p className="lg:pl-4 md:pl-2">Boost social presence</p>
+                                </li>
+
+                                <li className="flex">
+                                    <FaCircle size={24} style={{color: '#DBA11C'}} /> 
+                                    <p className="lg:pl-4 md:pl-2">Drive more sales</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </IconContext.Provider>   
                 </div>
-
-                <div className="landing_pills py-2">
-                    <ul>
-                        <li className="flex pb-2">
-                            <FaCircle size={24} style={{color: '#0095FA'}} /> 
-                            <p className="pl-4">Improve your reputation</p>
-                        </li>
-
-                        <li className="flex">
-                            <FaCircle size={24} style={{color: '#DBA11C'}} /> 
-                            <p className="pl-4">Improving rankings</p>
-                        </li>
-                    </ul>
-                </div>
-
             </div>
-
-            <Image 
-                src="/assets/images/HappyMan.png"
-                alt="Markedeen Landing Page Image"
-                width={500}
-                height={500}
-                priority= 'true'
-                className="image"
-            />
-
-            <div className="landing_container">
             
-                <div className="landing_pills gap-4">
-                    <FaInstagram size={24} />
-                    <FaFacebook size={24} />
-                    <FaTwitterSquare size={24} />
-                </div>
-
-                <div className="landing_pills py-2">
-                    <ul>
-                        <li className="flex pb-2">
-                            <FaCircle size={24} style={{color: '#0095FA'}} /> 
-                            <p className="pl-4">Boost social presence</p>
-                        </li>
-
-                        <li className="flex">
-                            <FaCircle size={24} style={{color: '#DBA11C'}} /> 
-                            <p className="pl-4">Drive more sales</p>
-                        </li>
-                    </ul>
-                </div>
-
-          </div>
-
         </div>
 
     </section>

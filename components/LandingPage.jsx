@@ -45,7 +45,7 @@ const LandingPage = () => {
 
             <div className="right_container">
                 <div className="!relative block">
-                    <div className="absolute">
+                    <div className="image-container absolute">
 
                         <IconContext.Provider value={{ className: "IconSizes" }}>
                             <div className="landing_pills pill-1 mt-2 drop-shadow-lg">

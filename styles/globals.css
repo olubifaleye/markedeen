@@ -64,9 +64,9 @@
   .IconSizes {
     font-size: 1rem;
   }
-  
-  .main{
-    max-height: 65vh;
+
+  .section-1{
+    min-height: 60vh;
   }
 }
 
@@ -77,42 +77,56 @@
   }
 
   .section-1{
-    min-height: 50vh;
+    min-height: 60vh;
   }
 
   .landing-image{
-    max-width: 370px;
+    max-width: 330px;
   }
 
-  .section-2{
-    background-color: aqua;
+  .image-container{
+    margin-top: 20px;
   }
   
 }
 
 
-
-
 @media screen and (min-width: 400px) and (max-width: 640px) {
 
-  .main{
-    max-height: 80vh;
+  .section-1{
+    min-height: 70vh;
+  }
+
+  .landing-image{
+    max-width: 300px;
+  }
+
+  .section-2{
+    margin-top: 20%;
   }
 }
 
 @media screen and (max-width: 400px) {
+
+  .section-1{
+    min-height: 70vh;
+  }
 
   .main{
     max-height: 100vh;
   }
 }
 
-@media screen and (width: 540px) {
+/* @media screen and (width: 540px) {
 
   .main{
     max-height: 110vh;
   }
-}
+
+  .section-1{
+    min-height: 70vh;
+  }
+} */
 
 
 /* Height */
@@ -122,6 +136,18 @@
   .landing-image{
     max-width: 370px;
   }
+  
+  .section-1{
+    min-height: 70vh;
+  }
+}
+
+@media screen and (max-height: 550px){
+    
+  .navbar ul{
+    overflow-y: scroll;
+  }
+
 }
 
 /* Tailwind Styles */

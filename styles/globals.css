@@ -16,8 +16,10 @@
   padding-left: 40px;
   padding-right: 40px;
   max-width: 100%;
-  max-height: 75vh;
 }
+
+
+/* Landing Page Default CSS */
 
 .landing-image{
   border-radius: 10%;
@@ -50,7 +52,12 @@
   min-height: 70vh;
 }
 
-/* Media Queries */
+
+/* Services Page Default CSS */
+
+
+
+/* Media Queries for all pages */
 
 /* Width */
 
@@ -73,7 +80,7 @@
 @media screen and (min-width: 640px) and (max-width: 940px) {
 
   .landing_container {
-    grid-auto-rows: 320px 400px 1fr !important;
+    grid-auto-rows: 300px 400px 1fr !important;
   }
 
   .section-1{
@@ -87,12 +94,24 @@
   .image-container{
     margin-top: 20px;
   }
-  
+
+  .image-container-container{
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .right_container{
+    margin-left: 0rem !important;
+  }
 }
 
 
 @media screen and (min-width: 400px) and (max-width: 640px) {
 
+  .landing_container {
+    grid-auto-rows: 450px 320px 1fr !important;
+  }
+  
   .section-1{
     min-height: 70vh;
   }
@@ -100,13 +119,48 @@
   .landing-image{
     max-width: 300px;
   }
+}
 
-  .section-2{
-    margin-top: 20%;
+@media screen and (min-width: 400px) and (max-width: 420px) {
+
+  .landing_container {
+    grid-auto-rows: 450px 320px 1fr !important;
+  }
+  
+  .section-1{
+    min-height: 70vh;
+  }
+
+  .landing-image{
+    max-width: 250px;
   }
 }
 
 @media screen and (max-width: 400px) {
+
+  .landing_container {
+    grid-auto-rows: 500px 220px 1fr !important;
+  }
+
+  .section-1{
+    min-height: 70vh;
+  }
+  
+
+  .section-2{
+    margin-top: 20%;
+  }
+
+  .main{
+    max-height: 100vh;
+  }
+}
+
+@media screen and (width: 360px) {
+
+  .landing_container {
+    grid-auto-rows: 570px 300px 1fr !important;
+  }
 
   .section-1{
     min-height: 70vh;
@@ -116,17 +170,6 @@
     max-height: 100vh;
   }
 }
-
-/* @media screen and (width: 540px) {
-
-  .main{
-    max-height: 110vh;
-  }
-
-  .section-1{
-    min-height: 70vh;
-  }
-} */
 
 
 /* Height */
@@ -147,10 +190,19 @@
   .navbar ul{
     overflow-y: scroll;
   }
-
 }
 
-/* Tailwind Styles */
+
+
+
+
+
+
+
+
+
+
+/* Tailwind Styles for all pages */
 
 .top_head_section{
   @apply text-center
@@ -180,11 +232,33 @@
   @apply border-14 rounded-3xl border-box lg:mt-24
 }
 
-/* Landing Page Component */
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-start {
+  @apply flex justify-start items-start;
+}
+
+.flex-end {
+  @apply flex justify-end items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+
+
+
+
+
+
+/* Landing Page Tailwind CSS */
 
 
 .landing_container{
-  @apply grid grid-cols-2 items-center justify-center max-md:grid-cols-1 max-md:-mt-12;
+  @apply grid grid-cols-2 items-center justify-center max-md:grid-cols-1;
   grid-auto-rows: minmax(auto, 1fr);
 }
 
@@ -210,11 +284,29 @@
 }
 
 
-/* Services Page Component */
+
+
+
+
+/* Services Page Tailwind CSS */
 
 .services_container{
-  @apply grid grid-cols-4 mb-72 justify-center max-md:grid-cols-1 lg:mt-10 lg:mb-80 max-md:-mt-12  
+  @apply grid grid-cols-4 mb-72 justify-center max-md:grid-cols-1 lg:mt-20 lg:mb-80 max-md:-mt-12;  
 }
+
+.services_item{
+  @apply text-center relative flex-center mb-10;
+}
+
+.icon_text {
+  @apply mt-5 mb-10 lg:text-xl md:text-xl max-md:text-lg font-semibold leading-[1.15] text-black;
+}
+
+
+
+
+
+
 
 
 
@@ -269,7 +361,11 @@
   @apply w-full flex rounded-lg mt-2 p-3 text-sm text-gray-500 outline-0;
 }
 
-/* Nav Component */
+
+
+
+
+/* Nav Component Tailwind CSS */
 
 .navbar{
   @apply flex-between w-full m-auto bg-primary-blue lg:pr-10 h-full md:pr-10;
@@ -303,20 +399,4 @@
 /* PromptCard Component */
 .prompt_card {
   @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/20 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md:w-[360px] w-full h-fit;
-}
-
-.flex-center {
-  @apply flex justify-center items-center;
-}
-
-.flex-start {
-  @apply flex justify-start items-start;
-}
-
-.flex-end {
-  @apply flex justify-end items-center;
-}
-
-.flex-between {
-  @apply flex justify-between items-center;
 }

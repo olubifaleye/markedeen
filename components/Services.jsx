@@ -3,7 +3,8 @@
 import '@styles/globals.css';
 import Image from 'next/image';
 
-import {FaRegWindowMaximize, FaCircle, FaInstagram, FaFacebook, FaTwitterSquare} from 'react-icons/fa';
+import {FaRegWindowMaximize, FaSortAmountUp, FaPencilAlt, FaConnectdevelop, FaVideo, FaSearchDollar, FaSearchengin, FaFilter, FaEnvelope, FaAd} from 'react-icons/fa';
+
 import { IconContext } from "react-icons";
 
 
@@ -26,8 +27,10 @@ const Services = () => {
 
             <div>
               <IconContext.Provider value={{ className: "IconSizes" }}>
-                <div className="mt-2 flex-center drop-shadow-lg">
-                  <FaRegWindowMaximize />
+                <div className="mt-2 flex-center">
+                  <div className='icon'>
+                    <FaRegWindowMaximize />
+                  </div>
                 </div>
               </IconContext.Provider>
 
@@ -35,7 +38,7 @@ const Services = () => {
                 Web Development
               </p>
 
-              <p className="desc">
+              <p className="desc-2">
                     Lorem ipsum dolor sit amet, consectetur 
                     adipiscing elit, sed do eiusmod tempor incididunt.
               </p>
@@ -47,8 +50,10 @@ const Services = () => {
           <div className='services_item'>
             <div>
               <IconContext.Provider value={{ className: "IconSizes" }}>
-                <div className="mt-2 flex-center drop-shadow-lg">
-                  <FaRegWindowMaximize />
+                <div className="mt-2 flex-center">
+                  <div className='icon'>
+                    <FaSortAmountUp />
+                  </div>
                 </div>
               </IconContext.Provider>
 
@@ -56,7 +61,7 @@ const Services = () => {
                 Reputation Management
               </p>
 
-              <p className="desc">
+              <p className="desc-2">
                     Lorem ipsum dolor sit amet, consectetur 
                     adipiscing elit, sed do eiusmod tempor incididunt.
               </p>
@@ -68,8 +73,10 @@ const Services = () => {
           <div className='services_item'>
             <div>
               <IconContext.Provider value={{ className: "IconSizes" }}>
-                <div className="mt-2 flex-center drop-shadow-lg">
-                  <FaRegWindowMaximize />
+                <div className="mt-2 flex-center">
+                  <div className='icon'>
+                    <FaPencilAlt />
+                  </div>
                 </div>
               </IconContext.Provider>
 
@@ -77,7 +84,7 @@ const Services = () => {
                 Content Marketing
               </p>
 
-              <p className="desc">
+              <p className="desc-2">
                     Lorem ipsum dolor sit amet, consectetur 
                     adipiscing elit, sed do eiusmod tempor incididunt.
               </p>
@@ -89,8 +96,10 @@ const Services = () => {
           <div className='services_item'>
             <div>
               <IconContext.Provider value={{ className: "IconSizes" }}>
-                <div className="mt-2 flex-center drop-shadow-lg">
-                  <FaRegWindowMaximize />
+                <div className="mt-2 flex-center">
+                  <div className='icon'>
+                    <FaConnectdevelop />
+                  </div>
                 </div>
               </IconContext.Provider>
 
@@ -98,7 +107,7 @@ const Services = () => {
                 Social Media
               </p>
 
-              <p className="desc">
+              <p className="desc-2">
                     Lorem ipsum dolor sit amet, consectetur 
                     adipiscing elit, sed do eiusmod tempor incididunt.
               </p>
@@ -110,8 +119,10 @@ const Services = () => {
           <div className='services_item'>
             <div>
               <IconContext.Provider value={{ className: "IconSizes" }}>
-                <div className="mt-2 flex-center drop-shadow-lg">
-                  <FaRegWindowMaximize />
+                <div className="mt-2 flex-center">
+                  <div className='icon'>
+                    <FaVideo />
+                  </div>
                 </div>
               </IconContext.Provider>
 
@@ -119,7 +130,7 @@ const Services = () => {
                 Video Marketing
               </p>
 
-              <p className="desc">
+              <p className="desc-2">
                     Lorem ipsum dolor sit amet, consectetur 
                     adipiscing elit, sed do eiusmod tempor incididunt.
               </p>
@@ -131,8 +142,10 @@ const Services = () => {
           <div className='services_item'>
             <div>
               <IconContext.Provider value={{ className: "IconSizes" }}>
-                <div className="mt-2 flex-center drop-shadow-lg">
-                  <FaRegWindowMaximize />
+                <div className="mt-2 flex-center">
+                  <div className='icon'>
+                    <FaSearchDollar />
+                  </div>
                 </div>
               </IconContext.Provider>
 
@@ -140,7 +153,7 @@ const Services = () => {
                 Local Marketing
               </p>
 
-              <p className="desc">
+              <p className="desc-2">
                     Lorem ipsum dolor sit amet, consectetur 
                     adipiscing elit, sed do eiusmod tempor incididunt.
               </p>
@@ -151,8 +164,10 @@ const Services = () => {
           <div className='services_item'>
             <div>
               <IconContext.Provider value={{ className: "IconSizes" }}>
-                <div className="mt-2 flex-center drop-shadow-lg">
-                  <FaRegWindowMaximize />
+                <div className="mt-2 flex-center">
+                  <div className='icon'>
+                    <FaSearchengin />
+                  </div>
                 </div>
               </IconContext.Provider>
 
@@ -160,7 +175,7 @@ const Services = () => {
                 SEO
               </p>
 
-              <p className="desc">
+              <p className="desc-2">
                     Lorem ipsum dolor sit amet, consectetur 
                     adipiscing elit, sed do eiusmod tempor incididunt. 
               </p>
@@ -171,8 +186,10 @@ const Services = () => {
           <div className='services_item'>
             <div>
               <IconContext.Provider value={{ className: "IconSizes" }}>
-                <div className="mt-2 flex-center drop-shadow-lg">
-                  <FaRegWindowMaximize />
+                <div className="mt-2 flex-center">
+                  <div className='icon'>
+                    <FaFilter />
+                  </div>
                 </div>
               </IconContext.Provider>
 
@@ -180,7 +197,7 @@ const Services = () => {
                 Lead Generation
               </p>
 
-              <p className="desc">
+              <p className="desc-2">
                     Lorem ipsum dolor sit amet, consectetur 
                     adipiscing elit, sed do eiusmod tempor incididunt.
               </p>
@@ -189,15 +206,17 @@ const Services = () => {
 
           </div>
 
-          <div className='services_item'>
+          <div className='services_item max-md:hidden'>
             
           </div>
 
           <div className='services_item'>
           <div>
               <IconContext.Provider value={{ className: "IconSizes" }}>
-                <div className="mt-2 flex-center drop-shadow-lg">
-                  <FaRegWindowMaximize />
+                <div className="mt-2 flex-center">
+                  <div className='icon'>
+                    <FaEnvelope />
+                  </div>
                 </div>
               </IconContext.Provider>
 
@@ -205,7 +224,7 @@ const Services = () => {
                 Email Marketing
               </p>
 
-              <p className="desc">
+              <p className="desc-2">
                     Lorem ipsum dolor sit amet, consectetur 
                     adipiscing elit, sed do eiusmod tempor incididunt.
               </p>
@@ -217,8 +236,10 @@ const Services = () => {
           <div className='services_item'>
           <div>
               <IconContext.Provider value={{ className: "IconSizes" }}>
-                <div className="mt-2 flex-center drop-shadow-lg">
-                  <FaRegWindowMaximize />
+                <div className="mt-2 flex-center">
+                  <div className='icon'>
+                    <FaAd />
+                  </div>
                 </div>
               </IconContext.Provider>
 
@@ -226,7 +247,7 @@ const Services = () => {
                 Paid Ads
               </p>
 
-              <p className="desc">
+              <p className="desc-2">
                     Lorem ipsum dolor sit amet, consectetur 
                     adipiscing elit, sed do eiusmod tempor incididunt.
               </p>
@@ -234,7 +255,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className='services_item'>
+          <div className='services_item max-md:hidden'>
             
           </div>
 

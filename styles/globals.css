@@ -228,6 +228,10 @@
   @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
 }
 
+.desc-2 {
+  @apply mt-5 text-base text-gray-600 sm:text-lg max-w-2xl;
+}
+
 .image{
   @apply border-14 rounded-3xl border-box lg:mt-24
 }
@@ -298,9 +302,15 @@
   @apply text-center relative flex-center mb-10;
 }
 
+.icon{
+  @apply w-fit px-2 py-2 rounded-lg bg-secondary-blue hover:drop-shadow-lg hover:-translate-y-2 duration-300;
+}
+
 .icon_text {
   @apply mt-5 mb-10 lg:text-xl md:text-xl max-md:text-lg font-semibold leading-[1.15] text-black;
 }
+
+
 
 
 

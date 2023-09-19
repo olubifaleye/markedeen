@@ -151,9 +151,6 @@
     margin-top: 20%;
   }
 
-  .main{
-    max-height: 100vh;
-  }
 }
 
 @media screen and (width: 360px) {
@@ -166,9 +163,10 @@
     min-height: 70vh;
   }
 
-  .main{
-    max-height: 100vh;
+  .landing-image{
+    max-width: 230px;
   }
+
 }
 
 
@@ -267,7 +265,7 @@
 }
 
 .left_container{
-  @apply lg:pl-20 pt-12 max-md:pl-6 h-full
+  @apply lg:pl-20 pt-12 h-full
 }
 
 .right_container{
@@ -295,7 +293,7 @@
 /* Services Page Tailwind CSS */
 
 .services_container{
-  @apply grid grid-cols-4 mb-72 justify-center max-md:grid-cols-1 lg:mt-20 lg:mb-80 max-md:-mt-12;  
+  @apply grid grid-cols-4 justify-center max-md:grid-cols-1 lg:mt-20;  
 }
 
 .services_item{
@@ -313,6 +311,40 @@
 
 
 
+/* Our Philosophy Page Tailwind CSS */
+
+.our_philosophy_container{
+  @apply grid grid-cols-2 justify-center max-md:grid-cols-1 lg:mt-20 lg:mb-20;  
+}
+
+
+
+
+/* Online Presence Page Tailwind CSS */
+
+.online_presence_container{
+  @apply grid grid-cols-2 justify-center max-md:grid-cols-1 lg:mb-20;  
+}
+
+.vertical_container{
+  @apply grid grid-cols-1 justify-center lg:mb-20 items-center;  
+}
+
+.boxes{
+  @apply bg-primary-blue opacity-80 flex gap-4 my-6 lg:px-8 border-8 border-box rounded-3xl max-md:px-2;
+}
+
+.calculator_item{
+  @apply text-center;
+}
+
+.input_item{
+  @apply px-6 py-4 rounded-3xl text-xl font-extrabold hover:drop-shadow-lg hover:-translate-y-1 duration-300 w-3/4;
+}
+
+.calculator_container{
+  @apply bg-primary-blue opacity-80 border-8 border-box rounded-3xl w-auto
+}
 
 
 

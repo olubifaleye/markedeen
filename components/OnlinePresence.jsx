@@ -84,38 +84,38 @@ const OnlinePresence = () => {
                         </p>
                     </div>
 
-                    <div className="vertical_container mt-6 lg:mx-20 md:mx-10 max-md:mx-0">
+                    <div className="vertical_container mt-6 mx-10 max-sm:mx-0">
                         <div className="boxes">
-                            <p className="sub_head_text !font-extrabold !text-white !mt-8">
+                            <p className="sub_head_text !font-extrabold !text-white max-sm:my-12">
                                 100%
                             </p>
 
-                            <p className="desc !text-white pl-auto">
+                            <p className="desc !text-white pl-auto desc_online">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </p>
                         </div>
 
                         <div className="boxes">
-                            <p className="sub_head_text !font-extrabold !text-white !mt-8">
+                            <p className="sub_head_text !font-extrabold !text-white max-sm:my-12">
                                 60%
                             </p>
 
-                            <p className="desc !text-white pl-auto">
+                            <p className="desc !text-white pl-auto desc_online">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </p>
                         </div>
 
                         <div className="boxes">
-                            <p className="sub_head_text !font-extrabold !text-white !mt-8">
+                            <p className="sub_head_text !font-extrabold !text-white max-sm:my-12">
                                 150%
                             </p>
 
-                            <p className="desc !text-white pl-auto">
+                            <p className="desc !text-white pl-auto desc_online">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </p>
                         </div>
 
-                        <div className="">
+                        <div className="max-md:hidden">
                            
                         </div>
                     </div>

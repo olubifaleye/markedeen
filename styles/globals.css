@@ -57,6 +57,24 @@
 
 
 
+/* Online Presence Page Default CSS */
+
+.desc_online{
+  margin: auto 0 !important;
+}
+
+
+/* Process Page Default CSS */
+
+.arrow{
+  rotate: 60deg;
+}
+
+.arrow_2{
+  transform: scaleY(-1);
+  rotate: -60deg;
+}
+
 /* Media Queries for all pages */
 
 /* Width */
@@ -74,6 +92,19 @@
 
   .section-1{
     min-height: 60vh;
+  }
+
+  .arrow{
+    rotate: 60deg;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .arrow_2{
+    transform: scaleY(-1);
+    rotate: -60deg;
+    width: 45px;
+    height: 45px;
   }
 }
 
@@ -103,6 +134,19 @@
   .right_container{
     margin-left: 0rem !important;
   }
+
+  .arrow{
+    rotate: 160deg;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .arrow_2{
+    transform: scaleY(-1);
+    rotate: 20deg;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 
@@ -119,7 +163,21 @@
   .landing-image{
     max-width: 300px;
   }
+
+  .arrow{
+    rotate: 160deg;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .arrow_2{
+    transform: scaleY(-1);
+    rotate: 20deg;
+    width: 40px;
+    height: 40px;
+  }
 }
+
 
 @media screen and (min-width: 400px) and (max-width: 420px) {
 
@@ -133,6 +191,19 @@
 
   .landing-image{
     max-width: 250px;
+  }
+
+  .arrow{
+    rotate: 160deg;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .arrow_2{
+    transform: scaleY(-1);
+    rotate: 20deg;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -151,6 +222,19 @@
     margin-top: 20%;
   }
 
+  .arrow{
+    rotate: 160deg;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .arrow_2{
+    transform: scaleY(-1);
+    rotate: 20deg;
+    width: 40px;
+    height: 40px;
+  }
+
 }
 
 @media screen and (width: 360px) {
@@ -167,6 +251,19 @@
     max-width: 230px;
   }
 
+  .arrow{
+    rotate: 160deg;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .arrow_2{
+    transform: scaleY(-1);
+    rotate: 20deg;
+    width: 40px;
+    height: 40px;
+  }
+
 }
 
 
@@ -181,12 +278,38 @@
   .section-1{
     min-height: 70vh;
   }
+
+  .arrow{
+    rotate: 60deg;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .arrow_2{
+    transform: scaleY(-1);
+    rotate: -60deg;
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media screen and (max-height: 550px){
     
   .navbar ul{
     overflow-y: scroll;
+  }
+
+  .arrow{
+    rotate: 160deg;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .arrow_2{
+    transform: scaleY(-1);
+    rotate: 20deg;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -223,7 +346,7 @@
 }
 
 .desc {
-  @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
+  @apply mt-5 max-sm:my-2 text-lg text-gray-600 sm:text-xl max-w-2xl;
 }
 
 .desc-2 {
@@ -331,7 +454,7 @@
 }
 
 .boxes{
-  @apply bg-primary-blue opacity-80 flex gap-4 my-6 lg:px-8 border-8 border-box rounded-3xl max-md:px-2;
+  @apply bg-primary-blue opacity-80 flex gap-4 my-6 md:py-3 md:px-4 border-8 border-box rounded-3xl max-md:px-5 w-auto;
 }
 
 .calculator_item{
@@ -349,7 +472,16 @@
 
 
 
+/* Process Page Tailwind CSS */
 
+
+.process_container{
+  @apply grid grid-cols-9 justify-center max-md:grid-cols-1 lg:mt-20;  
+}
+
+.icon_2{
+  @apply w-full px-2 py-2;
+}
 
 
 

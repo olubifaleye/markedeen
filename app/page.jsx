@@ -7,6 +7,7 @@ import OurPhilosophy from '@components/OurPhilosophy';
 import OnlinePresence from '@components/OnlinePresence';
 import OutperformRivals from '@components/OutperformRivals';
 import Process from '@components/Process';
+import Contact from '@components/Contact';
 
 //Page component to house other "page" components for single page web application
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
       <OnlinePresence />
       <OutperformRivals />
       <Process />
+      <Contact />
     </div>
   )
 }

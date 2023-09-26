@@ -83,31 +83,31 @@ const Nav = () => {
                 </Link>
 
             
-                <li className="nav_item">
+                <li className="nav_item nav_active">
                     <Link to="Services" spy={true} smooth={true} offset={-95} duration={500} className="link_item hover:border-b-4 max-md:hover:-mb-1">
                         Services
                     </Link>
                 </li> 
 
-                <li className="nav_item">
+                <li className="nav_item nav_active">
                     <Link to="OurPhilosophy" spy={true} smooth={true} offset={-30} duration={500} className="link_item hover:border-b-4 max-md:hover:-mb-1">
                         Our Philosphy
                     </Link>
                 </li> 
 
-                <li className="nav_item">
+                <li className="nav_item nav_active">
                     <Link to="OnlinePresence" spy={true} smooth={true} offset={-95} duration={500} className="link_item hover:border-b-4 max-md:hover:-mb-1">
                         Online Presence
                     </Link>
                 </li>
 
-                <li className="nav_item">
+                <li className="nav_item nav_active">
                     <Link to="OutperformRivals" spy={true} smooth={true} offset={-95} duration={500} className="link_item hover:border-b-4 max-md:hover:-mb-1">
                         Outperform Rivals
                     </Link>
                 </li> 
 
-                <li className="nav_item">
+                <li className="nav_item nav_active">
                     <Link to="Process" spy={true} smooth={true} offset={-95} duration={500} className="link_item hover:border-b-4 max-md:hover:-mb-1">
                         Process
                     </Link>

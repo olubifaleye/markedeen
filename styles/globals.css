@@ -53,19 +53,11 @@
 }
 
 
-/* Services Page Default CSS */
-
-
-
-
-
 /* Online Presence Page Default CSS */
 
 .desc_online{
   margin: auto 0 !important;
 }
-
-
 
 
 /* Process Page Default CSS */
@@ -79,16 +71,11 @@
   rotate: -60deg;
 }
 
-
-
-
 /* Contact Page Default CSS */
 
 .input-control:last-child{
   margin-left: 1.5rem;
 }
-
-
 
 
 
@@ -545,21 +532,17 @@
   @apply fixed w-full top-0 left-0 sticky transition ease-in duration-500 overflow-hidden z-20
 }
 
+.nav_active .active{
+  @apply border-b-4;
+}
 
 
 
-
-
+/* 
 .app {
   @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
 
 .black_btn {
   @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
-}
-
-
-/* PromptCard Component */
-.prompt_card {
-  @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/20 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md:w-[360px] w-full h-fit;
-}
+} */

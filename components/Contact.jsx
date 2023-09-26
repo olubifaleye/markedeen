@@ -6,7 +6,7 @@ import '@styles/globals.css';
 
 const Contact = () => {
   return (
-    <section className='main'>
+    <section className='main' id="Contact">
         <div className="our_philosophy_container">
             <div className="left_container">
 

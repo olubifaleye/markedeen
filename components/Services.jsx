@@ -10,7 +10,7 @@ import { IconContext } from "react-icons";
 
 const Services = () => {
   return (
-    <section className='main section-2'>
+    <section className='main section-2' id='Services'>
       <div className='top_head_section'>
         <p className="head_text_span">
           What can we do for you?

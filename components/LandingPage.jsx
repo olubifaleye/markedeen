@@ -1,7 +1,7 @@
 "use client"
 
 //Imports
-import Link from "next/link";
+import { Link } from 'react-scroll';
 import '@styles/globals.css';
 import Image from "next/image";
 import {FaRegWindowMaximize, FaCircle, FaInstagram, FaFacebook, FaTwitterSquare} from 'react-icons/fa';
@@ -10,7 +10,7 @@ import { IconContext } from "react-icons";
 
 const LandingPage = () => {
   return (
-    <section className="main">
+    <section className="main" id="LandingPage">
         <div className="landing_container section-1">
             <div className="left_container">
                 <p className="head_text">
@@ -26,7 +26,7 @@ const LandingPage = () => {
                 </p>
 
                 <nav className="button_container">
-                    <Link href="/" className="max-md:pt-6">
+                    <Link to="Contact" spy={true} smooth={true} offset={-100} duration={500} className="max-md:pt-6">
                         <button 
                             type="button" 
                             onClick={() => {}}
@@ -36,7 +36,7 @@ const LandingPage = () => {
                         </button>
                     </Link>
                     
-                    <Link href="/" className="text-primary-blue lg:text-lg max-md:text-lg max-sm:text-base max-md:pt-6">
+                    <Link to="Services" spy={true} smooth={true} offset={-100} duration={500} className="text-primary-blue lg:text-lg max-md:text-lg max-sm:text-base max-md:pt-6">
                         What can we do for you?                
                     </Link>
 

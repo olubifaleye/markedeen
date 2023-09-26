@@ -1,7 +1,7 @@
 "use client";
 
 //Allows movement between pages of the app
-import Link from "next/link";
+import {Link} from 'react-scroll';
 
 //Auto optimizes images
 import Image from "next/image";
@@ -51,7 +51,7 @@ const Nav = () => {
     <div className="header">
         <nav className="navbar">
             
-            <Link href="/" className="flex">
+            <Link to="LandingPage" spy={true} smooth={true} offset={-100} duration={500} className="flex">
                 <Image 
                     src="/assets/images/logo.png"
                     alt="Markedeen Logo"
@@ -71,7 +71,7 @@ const Nav = () => {
                 "flex max-md:fixed max-md:-left-full max-md:top-0 max-md:flex-col max-md:bg-primary-blue max-md:w-3/4 max-md:items-center max-md:h-full max-md:z-50 max-md:transition-all max-md:duration-1000"}
             >
 
-                <Link href="/" className="md:hidden mr-10 mt-10">
+                <Link to="LandingPage" spy={true} smooth={true} offset={50} duration={500} className="md:hidden mr-10 mt-10">
                     <Image 
                         src="/assets/images/logo.png"
                         alt="Markedeen Logo"
@@ -84,37 +84,37 @@ const Nav = () => {
 
             
                 <li className="nav_item">
-                    <Link href="/" className="link_item hover:border-b-4 max-md:hover:-mb-1">
+                    <Link to="Services" spy={true} smooth={true} offset={-95} duration={500} className="link_item hover:border-b-4 max-md:hover:-mb-1">
                         Services
                     </Link>
                 </li> 
 
                 <li className="nav_item">
-                    <Link href="/" className="link_item hover:border-b-4 max-md:hover:-mb-1">
+                    <Link to="OurPhilosophy" spy={true} smooth={true} offset={-30} duration={500} className="link_item hover:border-b-4 max-md:hover:-mb-1">
                         Our Philosphy
                     </Link>
                 </li> 
 
                 <li className="nav_item">
-                    <Link href="/" className="link_item hover:border-b-4 max-md:hover:-mb-1">
+                    <Link to="OnlinePresence" spy={true} smooth={true} offset={-95} duration={500} className="link_item hover:border-b-4 max-md:hover:-mb-1">
                         Online Presence
                     </Link>
                 </li>
 
                 <li className="nav_item">
-                    <Link href="/" className="link_item hover:border-b-4 max-md:hover:-mb-1">
+                    <Link to="OutperformRivals" spy={true} smooth={true} offset={-95} duration={500} className="link_item hover:border-b-4 max-md:hover:-mb-1">
                         Outperform Rivals
                     </Link>
                 </li> 
 
                 <li className="nav_item">
-                    <Link href="/" className="link_item hover:border-b-4 max-md:hover:-mb-1">
+                    <Link to="Process" spy={true} smooth={true} offset={-95} duration={500} className="link_item hover:border-b-4 max-md:hover:-mb-1">
                         Process
                     </Link>
                 </li>
 
                 <li className="nav_item">
-                    <Link href="/" className="max-md:pt-12">
+                    <Link to="Contact" spy={true} smooth={true} offset={0} duration={500} className="max-md:pt-12">
                         <button 
                             type="button" 
                             onClick={() => {}}
@@ -126,9 +126,9 @@ const Nav = () => {
                 </li>
 
                 <li className="nav_item">
-                    <Link href="/" className="link_item lg:pl-4 max-md:pt-28">
-                        Company Email
-                    </Link>
+                    <a href="mailto:email@example.com" className="link_item lg:pl-4 max-md:pt-28">
+                            email@example.com
+                    </a>
                 </li>       
             </ul>        
         

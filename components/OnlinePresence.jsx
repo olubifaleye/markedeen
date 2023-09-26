@@ -68,7 +68,7 @@ const OnlinePresence = () => {
     })
 
   return (
-    <section className="main section-4">
+    <section className="main section-4" id='OnlinePresence'>
         <div className='top_head_section'>
             <p className="head_text_span ml-24 text-left max-md:text-center max-md:ml-0">
                 Why is my online presence important?

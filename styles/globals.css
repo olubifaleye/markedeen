@@ -511,7 +511,19 @@
 }
 
 
+/* SuccessQuotes Footter Tailwind CSS */
 
+.quotes_container{
+  @apply grid grid-cols-7 gap-x-10 justify-center w-auto;  
+}
+
+.quotes_item{
+  @apply px-6 py-2 text-center;
+}
+
+.quotes_image{
+  @apply rounded-full border-14 border-box w-fit m-auto;
+}
 
 
 /* Nav Component Tailwind CSS */

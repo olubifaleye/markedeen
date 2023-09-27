@@ -84,37 +84,37 @@ const Nav = () => {
 
             
                 <li className="nav_item nav_active">
-                    <Link to="Services" spy={true} smooth={true} offset={-95} duration={500} className="link_item hover:border-b-4 max-md:hover:-mb-1">
+                    <Link to="Services" spy={true} smooth={true} offset={-95} duration={500} onClick={handleClick} className="link_item hover:border-b-4 max-md:hover:-mb-1">
                         Services
                     </Link>
                 </li> 
 
                 <li className="nav_item nav_active">
-                    <Link to="OurPhilosophy" spy={true} smooth={true} offset={-30} duration={500} className="link_item hover:border-b-4 max-md:hover:-mb-1">
+                    <Link to="OurPhilosophy" spy={true} smooth={true} offset={-30} duration={500} onClick={handleClick} className="link_item hover:border-b-4 max-md:hover:-mb-1">
                         Our Philosphy
                     </Link>
                 </li> 
 
                 <li className="nav_item nav_active">
-                    <Link to="OnlinePresence" spy={true} smooth={true} offset={-95} duration={500} className="link_item hover:border-b-4 max-md:hover:-mb-1">
+                    <Link to="OnlinePresence" spy={true} smooth={true} offset={-95} duration={500} onClick={handleClick} className="link_item hover:border-b-4 max-md:hover:-mb-1">
                         Online Presence
                     </Link>
                 </li>
 
                 <li className="nav_item nav_active">
-                    <Link to="OutperformRivals" spy={true} smooth={true} offset={-95} duration={500} className="link_item hover:border-b-4 max-md:hover:-mb-1">
+                    <Link to="OutperformRivals" spy={true} smooth={true} offset={-95} duration={500} onClick={handleClick} className="link_item hover:border-b-4 max-md:hover:-mb-1">
                         Outperform Rivals
                     </Link>
                 </li> 
 
                 <li className="nav_item nav_active">
-                    <Link to="Process" spy={true} smooth={true} offset={-95} duration={500} className="link_item hover:border-b-4 max-md:hover:-mb-1">
+                    <Link to="Process" spy={true} smooth={true} offset={-95} duration={500} onClick={handleClick} className="link_item hover:border-b-4 max-md:hover:-mb-1">
                         Process
                     </Link>
                 </li>
 
                 <li className="nav_item">
-                    <Link to="Contact" spy={true} smooth={true} offset={0} duration={500} className="max-md:pt-12">
+                    <Link to="Contact" spy={true} smooth={true} offset={0} duration={500} onClick={handleClick} className="max-md:pt-12">
                         <button 
                             type="button" 
                             onClick={() => {}}
@@ -126,7 +126,7 @@ const Nav = () => {
                 </li>
 
                 <li className="nav_item">
-                    <a href="mailto:email@example.com" className="link_item lg:pl-4 max-md:pt-28">
+                    <a href="mailto:email@example.com" onClick={handleClick} className="link_item lg:pl-4 max-md:pt-28">
                             email@example.com
                     </a>
                 </li>       

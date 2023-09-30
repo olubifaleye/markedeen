@@ -3,8 +3,27 @@
 //Imports
 import Link from "next/link";
 import '@styles/globals.css';
+import { useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+
+const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, form.current, YOUR_PUBLIC_KEY)
+      .then((result) => {
+          console.log(result.text);
+          console.log("message sent");
+
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+
   return (
     <section className='main' id="Contact">
         <div className="our_philosophy_container">

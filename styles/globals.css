@@ -239,6 +239,14 @@
     height: 40px;
   }
 
+  .error_label{
+    padding-left: 0px !important;
+    display: inline-block;
+    width: 100%;
+    text-align:center;
+    
+  }
+
 }
 
 @media screen and (width: 360px) {
@@ -266,6 +274,13 @@
     rotate: 20deg;
     width: 40px;
     height: 40px;
+  }
+
+  .error_label{
+    padding-left: 0px !important;
+    display: inline-block;
+    width: 100%;
+    text-align:center;
   }
 
 }
@@ -380,6 +395,30 @@
 
 
 
+/* Nav Component Tailwind CSS */
+
+.navbar{
+  @apply flex-between w-full m-auto bg-primary-blue lg:pr-10 h-full md:pr-10;
+}
+
+.nav_item{
+  @apply flex lg:p-2 font-bold text-white max-md:my-3 md:p-1
+}
+
+.link_item{
+  @apply flex-center transition ease-in duration-500 overflow-hidden max-sm:text-base md:text-xs max-md:text-2xl lg:text-base 
+}
+
+.header{
+  @apply fixed w-full top-0 left-0 sticky transition ease-in duration-500 overflow-hidden z-20
+}
+
+.nav_active .active{
+  @apply border-b-4;
+}
+
+
+
 
 
 
@@ -488,6 +527,8 @@
 }
 
 
+
+
 /* Contact Page Tailwind CSS*/
 
 .input-control{
@@ -510,6 +551,13 @@
   @apply pl-6;
 }
 
+.error_label{
+  @apply text-rose-600 font-medium pl-4;
+}
+
+
+
+
 
 /* SuccessQuotes Footter Tailwind CSS */
 
@@ -525,36 +573,3 @@
   @apply rounded-full border-14 border-box w-fit m-auto;
 }
 
-
-/* Nav Component Tailwind CSS */
-
-.navbar{
-  @apply flex-between w-full m-auto bg-primary-blue lg:pr-10 h-full md:pr-10;
-}
-
-.nav_item{
-  @apply flex lg:p-2 font-bold text-white max-md:my-3 md:p-1
-}
-
-.link_item{
-  @apply flex-center transition ease-in duration-500 overflow-hidden max-sm:text-base md:text-xs max-md:text-2xl lg:text-base 
-}
-
-.header{
-  @apply fixed w-full top-0 left-0 sticky transition ease-in duration-500 overflow-hidden z-20
-}
-
-.nav_active .active{
-  @apply border-b-4;
-}
-
-
-
-/* 
-.app {
-  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
-}
-
-.black_btn {
-  @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
-} */

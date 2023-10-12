@@ -126,8 +126,8 @@ const Nav = () => {
                 </li>
 
                 <li className="nav_item">
-                    <a href="mailto:email@example.com" onClick={handleClick} className="link_item lg:pl-4 max-md:pt-28">
-                            email@example.com
+                    <a href="mailto:contactus@markedeen.com" onClick={handleClick} className="link_item lg:pl-4 max-md:pt-28">
+                            contactus@markedeen.com
                     </a>
                 </li>       
             </ul>        

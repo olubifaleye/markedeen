@@ -20,13 +20,14 @@ const SuccessQuotes = () => {
           <div className='quotes_item'>
 
             <div className='desc'>
-              Lorem ipsum dolor sit amet, consectetur 
-              adipiscing elit, sed do eiusmod tempor incididunt 
-              ut labore et dolore magna aliqua. 
+              "Markedeen has been an absolute game-changer for Vybe Promotions. 
+              Their expertise in running ads and orchestrating social media campaigns has significantly elevated our brand presence. 
+              Markedeen's collaboration with numerous events played a pivotal role in establishing 'Flava' as a recognized name in Edinburgh. 
+              Their strategic approach and dedication to our success make them a valuable partner. We look forward to continuing this journey together!"
             </div>
 
             <p className='icon_text'>
-                Comapny 1
+                Vybe Promotions
             </p>
             
             <div className='quotes_image'>
@@ -44,13 +45,14 @@ const SuccessQuotes = () => {
           <div className='quotes_item'>
 
             <div className='desc'>
-              Lorem ipsum dolor sit amet, consectetur 
-              adipiscing elit, sed do eiusmod tempor incididunt 
-              ut labore et dolore magna aliqua. 
+                "Being a DeenWave user has transformed the way I manage my business at 7sBeautyBar. 
+                The automation features provided by DeenWave streamline my processes, making my life as a lash tech and loctician much easier. 
+                From handling backend tasks to automating appointments, DeenWave has become an indispensable tool in my daily operations. 
+                I highly recommend it to fellow beauty professionals looking to enhance their efficiency."
             </div>
 
             <p className='icon_text'>
-                Company 2
+                7sBeautyBar
             </p>
 
             <div className='quotes_image'>
@@ -68,82 +70,14 @@ const SuccessQuotes = () => {
           <div className='quotes_item'>
 
             <div className='desc'>
-              Lorem ipsum dolor sit amet, consectetur 
-              adipiscing elit, sed do eiusmod tempor incididunt 
-              ut labore et dolore magna aliqua. 
+                "Markedeen played a crucial role in establishing CurryKits' online presence. 
+                Their expertise in Facebook Ads was instrumental in driving visibility and engagement. 
+                What truly stood out was their ability to establish a new TikTok shop within months of its opening. 
+                The content consultation for social media added a creative touch to our brand. Markedeen's strategic approach and dedication to our brand's growth have been exceptional."
             </div>
 
             <p className='icon_text'>
-                Company 3
-            </p>
-
-            <div className='quotes_image'>
-              <Image 
-                  src="/assets/images/Curved_solid_arrow.svg"
-                  alt="Markedeen Landing Page Image"
-                  width={50}
-                  height={50}
-                  priority= 'true'                     
-              />
-            </div>
-
-          </div>
-
-          <div className='quotes_item'>
-            <div className='desc'>
-              Lorem ipsum dolor sit amet, consectetur 
-              adipiscing elit, sed do eiusmod tempor incididunt 
-              ut labore et dolore magna aliqua. 
-            </div>
-
-            <p className='icon_text'>
-                Company 4
-            </p>
-
-            <div className='quotes_image'>
-              <Image 
-                  src="/assets/images/Curved_solid_arrow.svg"
-                  alt="Markedeen Landing Page Image"
-                  width={50}
-                  height={50}
-                  priority= 'true'                     
-              />
-            </div>
-
-          </div>
-
-          <div className='quotes_item'>
-            <div className='desc'>
-              Lorem ipsum dolor sit amet, consectetur 
-              adipiscing elit, sed do eiusmod tempor incididunt 
-              ut labore et dolore magna aliqua. 
-            </div>
-
-            <p className='icon_text'>
-                Comapny 5
-            </p>
-
-            <div className='quotes_image'>
-              <Image 
-                  src="/assets/images/Curved_solid_arrow.svg"
-                  alt="Markedeen Landing Page Image"
-                  width={50}
-                  height={50}
-                  priority= 'true'                     
-              />
-            </div>
-
-          </div>
-
-          <div className='quotes_item'>
-            <div className='desc'>
-              Lorem ipsum dolor sit amet, consectetur 
-              adipiscing elit, sed do eiusmod tempor incididunt 
-              ut labore et dolore magna aliqua. 
-            </div>
-
-            <p className='icon_text'>
-                Comapny 6
+                CurryKits
             </p>
 
             <div className='quotes_image'>

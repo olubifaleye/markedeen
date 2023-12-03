@@ -34,12 +34,15 @@ const Process = () => {
                     </IconContext.Provider>
 
                     <p className='icon_text'>
-                        Discovery
+                        Strategic Consultation
                     </p>
 
                     <p className="desc-2">
-                            Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit, sed do eiusmod tempor incididunt.
+                        Client Discovery:  
+                    </p>
+
+                    <p className="desc-2">
+                        Market Analysis: 
                     </p>
                 </div>
             </div>
@@ -66,12 +69,15 @@ const Process = () => {
                     </IconContext.Provider>
 
                     <p className='icon_text'>
-                        Stratedgy
+                        Customized Strategy Development
                     </p>
 
                     <p className="desc-2">
-                            Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit, sed do eiusmod tempor incididunt.
+                        Tailored Approach:
+                    </p>
+
+                    <p className="desc-2">
+                        Platform Selection:
                     </p>
                 </div>
             </div>
@@ -98,12 +104,15 @@ const Process = () => {
                     </IconContext.Provider>
 
                     <p className='icon_text'>
-                        Development
+                        Campaign Setup
                     </p>
 
                     <p className="desc-2">
-                            Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit, sed do eiusmod tempor incididunt.
+                        Precise Targeting:
+                    </p>
+
+                    <p className="desc-2">
+                        Ad Creation:
                     </p>
                 </div>
             </div>
@@ -130,12 +139,15 @@ const Process = () => {
                     </IconContext.Provider>
 
                     <p className='icon_text'>
-                        Launch
+                        Website Integration
                     </p>
 
                     <p className="desc-2">
-                            Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit, sed do eiusmod tempor incididunt.
+                        Landing Page Development:
+                    </p>
+
+                    <p className="desc-2">
+                        CTA Implementation:
                     </p>
                 </div>
             </div>

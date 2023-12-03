@@ -10,19 +10,21 @@ import { IconContext } from "react-icons";
 
 const LandingPage = () => {
   return (
-    <section className="main" id="LandingPage">
+    <section className="main" id="home">
         <div className="landing_container section-1">
             <div className="left_container">
                 <p className="head_text">
-                    Momentum starts with
+                    Markedeen - The key that unlocks your
 
-                    <span className="head_text_span"> strategic marketing</span>
+                    <span className="head_text_span"> growth potential</span>
                 </p>
 
                 <p className="desc">
-                    Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua. 
+                    Markedeen goes beyond the realms of traditional marketing — we're your end-to-end business growth partner. 
+                    From orchestrating compelling advertising campaigns to seamlessly handling backend operations, we take care of every facet of your growth journey. 
+                    Our services include diligent follow-ups with customers, meticulous lead qualification, appointment bookings, and managing your Online Reputation. 
+                    With Markedeen, you can focus on what you do best — showing up to your appointments and closing leads. Let us handle the rest, 
+                    ensuring your business not only thrives but excels in every aspect
                 </p>
 
                 <nav className="button_container">
@@ -32,7 +34,7 @@ const LandingPage = () => {
                             onClick={() => {}}
                             className="outline_btn_2"                       
                         >
-                            Free Quote
+                            Contact Us
                         </button>
                     </Link>
                     

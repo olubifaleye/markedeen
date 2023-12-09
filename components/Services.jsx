@@ -40,7 +40,7 @@ const Services = () => {
               </p>
 
               <p className="desc-2">
-                We craft stunning, user-friendly websites that not only engage your audience but also drive conversions, ensuring your online presence aligns seamlessly with your brand.
+                We create engaging, conversion-focused websites that seamlessly align with your brand
               </p>
             </div> 
           </div>
@@ -60,7 +60,7 @@ const Services = () => {
               </p>
 
               <p className="desc-2">
-                Our expert strategies are designed to capture high-quality leads, helping your business grow by connecting you with the right customers at the right time. 
+                Our expert strategies capture high-quality leads, connecting your business with the right customers at the right time for growth.
               </p>
 
             </div>
@@ -81,7 +81,7 @@ const Services = () => {
               </p>
 
               <p className="desc-2">
-                We curate and create engaging social media content that resonates with your target audience, building brand loyalty and driving meaningful interactions. 
+                We craft engaging social media content to build brand loyalty and drive meaningful interactions with your target audience
               </p>
 
             </div>
@@ -102,7 +102,7 @@ const Services = () => {
               </p>
 
               <p className="desc-2">
-                Our data-driven online advertising campaigns are tailored to deliver measurable results, enhancing your brand's visibility and driving traffic to your website. 
+                Tailored, data-driven online ad campaigns for measurable results, boosting brand visibility and driving website traffic. 
               </p>
 
             </div>
@@ -144,7 +144,7 @@ const Services = () => {
                 </p>
 
                 <p className="desc-2">
-                We help you manage and utilize customer data efficiently, allowing you to provide a top-notch customer experience and drive long-term relationships with your clients.
+                  We assist in efficient customer data management, enhancing your customer experience and fostering long-term relationships.
                 </p>
 
               </div>
@@ -186,7 +186,7 @@ const Services = () => {
                 </p>
 
                 <p className="desc-2">
-                  Our personalized email campaigns are designed to boost engagement and conversions, creating a direct and meaningful connection with your audience.
+                  Elevate outreach with targeted SMS Marketing through Markedeen's seamless integration for direct customer connection.
                 </p>
 
               </div>

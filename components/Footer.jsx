@@ -2,6 +2,11 @@
 
 //Allows movement between pages of the app
 import Link from "next/link";
+import dynamic from 'next/dynamic';
+
+const ScrollLink = dynamic(() => import('react-scroll').then((module) => module.Link), {
+  ssr: false,
+}); 
 
 //Auto optimizes images
 import Image from "next/image";
@@ -38,8 +43,10 @@ const Footer = () => {
                 </div>
  
             
-                <div className="nav_item hover:border-b-4">
-                    <Link href="/faq">FAQ</Link>
+                <div className="nav_item">
+                    <ScrollLink to="FAQ" spy={true} smooth={true} offset={-95} duration={500} className="link_item hover:border-b-4 max-md:hover:-mb-1">
+                        <Link href="/faq">FAQ</Link>
+                    </ScrollLink>
                 </div>
             </div>
         </nav>

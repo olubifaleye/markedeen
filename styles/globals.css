@@ -77,7 +77,11 @@
   margin-left: 1.5rem;
 }
 
+/* Success Quotes Default CSS */
 
+.quotes_image_icon{
+  border-radius: 10%;
+}
 
 /* Media Queries for all pages */
 
@@ -372,6 +376,10 @@
   @apply mt-5 text-base text-gray-600 sm:text-lg max-w-2xl;
 }
 
+.desc-3 {
+  @apply text-base text-gray-600 sm:text-lg text-justify;
+}
+
 .image{
   @apply border-14 rounded-3xl border-box lg:mt-24
 }
@@ -523,14 +531,16 @@
 
 
 .process_container{
-  @apply grid grid-cols-9 justify-center max-md:grid-cols-1 lg:mt-20;  
+  @apply grid grid-cols-3 justify-center max-md:grid-cols-1 lg:mt-20;  
 }
 
 .icon_2{
   @apply w-full px-2 py-2;
 }
 
-
+.process_item{
+  @apply text-center relative flex-center mb-10 w-1/2 mx-auto;
+}
 
 
 /* Contact Page Tailwind CSS*/
@@ -563,7 +573,7 @@
 
 
 
-/* SuccessQuotes Footter Tailwind CSS */
+/* SuccessQuotes Footer Tailwind CSS */
 
 .quotes_container{
   @apply grid grid-cols-7 gap-x-10 justify-center w-auto;  
@@ -574,6 +584,15 @@
 }
 
 .quotes_image{
-  @apply rounded-full border-14 border-box w-fit m-auto;
+  @apply rounded-full border-4 border-box w-fit m-auto;
 }
 
+
+/* FAQ Page Tailwind CSS */
+.faq_container{
+  @apply mx-auto w-3/4;
+}
+
+.faq_sub_beader {
+  @apply mt-10 lg:text-xl md:text-xl max-md:text-lg font-semibold leading-[1.15] text-black;
+}

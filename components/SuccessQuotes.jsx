@@ -32,11 +32,11 @@ const SuccessQuotes = () => {
             
             <div className='quotes_image'>
               <Image 
-                  src="/assets/images/Curved_solid_arrow.svg"
+                  src="/assets/images/VYBE LOGO.PNG"
                   alt="Markedeen Landing Page Image"
-                  width={50}
-                  height={50}
-                  priority= 'true'                     
+                  width={100}
+                  height={100}
+                  priority= 'true'                    
               />
             </div>
 
@@ -82,34 +82,11 @@ const SuccessQuotes = () => {
 
             <div className='quotes_image'>
               <Image 
-                  src="/assets/images/Curved_solid_arrow.svg"
+                  src="/assets/images/CurryKits.jpeg"
                   alt="Markedeen Landing Page Image"
-                  width={50}
-                  height={50}
-                  priority= 'true'                     
-              />
-            </div>
-
-          </div>
-
-          <div className='quotes_item'>
-            <div className='desc'>
-              Lorem ipsum dolor sit amet, consectetur 
-              adipiscing elit, sed do eiusmod tempor incididunt 
-              ut labore et dolore magna aliqua. 
-            </div>
-
-            <p className='icon_text'>
-                Comapny 7
-            </p>
-
-            <div className='quotes_image'>
-              <Image 
-                  src="/assets/images/Curved_solid_arrow.svg"
-                  alt="Markedeen Landing Page Image"
-                  width={50}
-                  height={50}
-                  priority= 'true'                     
+                  width={100}
+                  height={100}
+                  priority= 'true'                   
               />
             </div>
 

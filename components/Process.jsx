@@ -34,28 +34,15 @@ const Process = () => {
                     </IconContext.Provider>
 
                     <p className='icon_text'>
-                        Strategic Consultation
+                        1) Strategic Consultation
                     </p>
 
                     <p className="desc-2">
-                        Client Discovery:  
-                    </p>
-
-                    <p className="desc-2">
-                        Market Analysis: 
+                        We unveil your business vision, audience, and unique strengths. 
+                        Additionally, we meticulously research your industry, competitors, and trends, 
+                        crafting strategic insights tailored for you.
                     </p>
                 </div>
-            </div>
-
-            <div className='services_item'>
-                <Image 
-                    src="/assets/images/Curved_solid_arrow.svg"
-                    alt="Markedeen Landing Page Image"
-                    width={50}
-                    height={50}
-                    priority= 'true'    
-                    className='arrow'                        
-                />
             </div>
 
             <div className='services_item'>
@@ -69,28 +56,14 @@ const Process = () => {
                     </IconContext.Provider>
 
                     <p className='icon_text'>
-                        Customized Strategy Development
+                        2) Customized Strategy Development
                     </p>
 
                     <p className="desc-2">
-                        Tailored Approach:
-                    </p>
-
-                    <p className="desc-2">
-                        Platform Selection:
+                        Shape a digital plan aligned with your goals and industry by choosing the most effective platforms—Google Ads,
+                         Facebook, Instagram, Meta, TikTok, Youtube, Email & SMS.
                     </p>
                 </div>
-            </div>
-
-            <div className='services_item'>
-                <Image 
-                    src="/assets/images/Curved_solid_arrow.svg"
-                    alt="Markedeen Landing Page Image"
-                    width={50}
-                    height={50}
-                    priority= 'true'    
-                    className='arrow_2'                        
-                />
             </div>
 
             <div className='services_item'>
@@ -104,28 +77,14 @@ const Process = () => {
                     </IconContext.Provider>
 
                     <p className='icon_text'>
-                        Campaign Setup
+                        3) Campaign Setup
                     </p>
 
                     <p className="desc-2">
-                        Precise Targeting:
-                    </p>
-
-                    <p className="desc-2">
-                        Ad Creation:
+                        Define and refine audiences by demographics, interests, and behaviors, 
+                        combined with crafted visually appealing, platform-specific ad creatives.
                     </p>
                 </div>
-            </div>
-
-            <div className='services_item'>
-                <Image 
-                    src="/assets/images/Curved_solid_arrow.svg"
-                    alt="Markedeen Landing Page Image"
-                    width={50}
-                    height={50}
-                    priority= 'true'    
-                    className='arrow'                        
-                />
             </div>
 
             <div className='services_item'>
@@ -139,28 +98,14 @@ const Process = () => {
                     </IconContext.Provider>
 
                     <p className='icon_text'>
-                        Website Integration
+                        4) Website Integration
                     </p>
 
                     <p className="desc-2">
-                        Landing Page Development:
-                    </p>
-
-                    <p className="desc-2">
-                        CTA Implementation:
+                        Develop custom pages aligned with campaign goals and 
+                        implement clear Calls-to-Action for strategic user guidance.
                     </p>
                 </div>
-            </div>
-
-            <div className='services_item'>
-                <Image 
-                    src="/assets/images/Curved_solid_arrow.svg"
-                    alt="Markedeen Landing Page Image"
-                    width={50}
-                    height={50}
-                    priority= 'true'    
-                    className='arrow_2'                        
-                />
             </div>
 
             <div className='services_item'>
@@ -174,15 +119,100 @@ const Process = () => {
                     </IconContext.Provider>
 
                     <p className='icon_text'>
-                        Maintenance
+                        5) Content Creation
                     </p>
 
                     <p className="desc-2">
-                            Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit, sed do eiusmod tempor incididunt.
+                        Strategic Content Creation: Develop a content plan that aligns with your brand voice 
+                        and directly engages your target audience through compelling visuals, videos, and written content.
                     </p>
                 </div>
             </div>
+
+            <div className='services_item'>
+                <div>
+                    <IconContext.Provider value={{ className: "IconSizes" }}>
+                        <div className="mt-2 flex-center">
+                            <div className='icon'>
+                                <FaChartBar />
+                            </div>
+                        </div>
+                    </IconContext.Provider>
+
+                    <p className='icon_text'>
+                        6) Data-Driven Optimization
+                    </p>
+
+                    <p className="desc-2">
+                        Employ analytics tools for real-time campaign and website monitoring. 
+                        Conduct A/B testing to refine strategies with data-driven insights
+                    </p>
+                </div>
+            </div>
+
+            <div className='services_item'>
+                <div>
+                    <IconContext.Provider value={{ className: "IconSizes" }}>
+                        <div className="mt-2 flex-center">
+                            <div className='icon'>
+                                <FaChartBar />
+                            </div>
+                        </div>
+                    </IconContext.Provider>
+
+                    <p className='icon_text'>
+                        8) Feedback and Reporting
+                    </p>
+
+                    <p className="desc-2">
+                        Regularly seek feedback to ensure our strategies align with your evolving business goals. 
+                        In addition we provide detailed reports on key performance indicators and campaign outcomes.
+                    </p>
+                </div>
+            </div>
+
+            <div className='services_item'>
+                <div>
+                    <IconContext.Provider value={{ className: "IconSizes" }}>
+                        <div className="mt-2 flex-center">
+                            <div className='icon'>
+                                <FaChartBar />
+                            </div>
+                        </div>
+                    </IconContext.Provider>
+
+                    <p className='icon_text'>
+                        7) Lead Generation and Conversion
+                    </p>
+
+                    <p className="desc-2">
+                        Place CTAs strategically on landing pages to gather essential data for lead generation. 
+                        Moreover, we refine the user journey to maximize conversion rates and drive business growth.
+                    </p>
+                </div>
+            </div>
+
+            <div className='services_item'>
+                <div>
+                    <IconContext.Provider value={{ className: "IconSizes" }}>
+                        <div className="mt-2 flex-center">
+                            <div className='icon'>
+                                <FaChartBar />
+                            </div>
+                        </div>
+                    </IconContext.Provider>
+
+                    <p className='icon_text'>
+                        9) Continuous Improvement
+                    </p>
+
+                    <p className="desc-2">
+                        Implement continuous improvements to campaigns and strategies based on data insights. 
+                        Strategically plan for scalability to accommodate business growth and evolving market dynamics.
+                    </p>
+                </div>
+            </div>
+            
         </div>
 
     </section>

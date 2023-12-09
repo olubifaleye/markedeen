@@ -401,16 +401,20 @@
   @apply flex-between w-full m-auto bg-primary-blue lg:pr-10 h-full md:pr-10;
 }
 
+.footer{
+  @apply py-4 px-6 flex items-center justify-between mb-5 bg-primary-blue h-full;
+}
+
 .nav_item{
-  @apply flex lg:p-2 font-bold text-white max-md:my-3 md:p-1
+  @apply flex lg:p-2 font-bold text-white max-md:my-3 md:p-1;
 }
 
 .link_item{
-  @apply flex-center transition ease-in duration-500 overflow-hidden max-sm:text-base md:text-xs max-md:text-2xl lg:text-base 
+  @apply flex-center transition ease-in duration-500 overflow-hidden max-sm:text-base md:text-xs max-md:text-2xl lg:text-base; 
 }
 
 .header{
-  @apply fixed w-full top-0 left-0 sticky transition ease-in duration-500 overflow-hidden z-20
+  @apply fixed w-full top-0 left-0 sticky transition ease-in duration-500 overflow-hidden z-20;
 }
 
 .nav_active .active{

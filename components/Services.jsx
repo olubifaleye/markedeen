@@ -42,9 +42,6 @@ const Services = () => {
               <p className="desc-2">
                 We craft stunning, user-friendly websites that not only engage your audience but also drive conversions, ensuring your online presence aligns seamlessly with your brand.
               </p>
-
-              <Link href="/readmore">Read More</Link>
-
             </div> 
           </div>
 
@@ -196,6 +193,13 @@ const Services = () => {
             
           </div>
         </div>
+
+
+        <Link href="/readmore" className='flex items-center justify-center'>
+          <p className='lg:text-xl md:text-xl max-md:text-lg font-semibold leading-[1.15] text-black'>
+            Read More
+          </p>
+        </Link>
 
     </section>
   )

@@ -102,7 +102,7 @@ const Nav = () => {
                 </li> 
 
                 <li className="nav_item nav_active">
-                    <ScrollLink to="OurPhilosophy" spy={true} smooth={true} offset={-30} duration={500} onClick={handleClick} className="link_item hover:border-b-4 max-md:hover:-mb-1">
+                    <ScrollLink to="OurPhilosophy" spy={true} smooth={true} offset={-80} duration={500} onClick={handleClick} className="link_item hover:border-b-4 max-md:hover:-mb-1">
                         <Link href="./#OurPhilosophy">
                             Our Philosphy
                         </Link>

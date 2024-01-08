@@ -14,7 +14,7 @@ const LandingPage = () => {
         <div className="landing_container section-1">
             <div className="left_container">
                 <p className="head_text">
-                    Markedeen - The key that unlocks your
+                    Unlock your
 
                     <span className="head_text_span"> growth potential</span>
                 </p>
@@ -24,7 +24,7 @@ const LandingPage = () => {
                     From orchestrating compelling advertising campaigns to seamlessly handling backend operations, we take care of every facet of your growth journey. 
                     Our services include diligent follow-ups with customers, meticulous lead qualification, appointment bookings, and managing your Online Reputation. 
                     With Markedeen, you can focus on what you do best — showing up to your appointments and closing leads. Let us handle the rest, 
-                    ensuring your business not only thrives but excels in every aspect
+                    ensuring your business not only thrives but excels in every aspect.
                 </p>
 
                 <nav className="button_container">
@@ -47,7 +47,7 @@ const LandingPage = () => {
 
             <div className="right_container">
                 <div className="!relative block image-container-container">
-                    <div className="image-container absolute">
+                    <div className="image_container absolute">
 
                         <IconContext.Provider value={{ className: "IconSizes" }}>
                             <div className="landing_pills pill-1 mt-2 drop-shadow-lg">
@@ -73,7 +73,7 @@ const LandingPage = () => {
                         </IconContext.Provider>   
 
                         <Image 
-                            src="/assets/images/HappyMan.png"
+                            src="/assets/images/Markedeen_Logo_2.jpeg"
                             alt="Markedeen Landing Page Image"
                             width={540}
                             height={480}
@@ -106,8 +106,7 @@ const LandingPage = () => {
                             </div>
                         </IconContext.Provider>   
                     </div>
-                </div>
-                
+                </div>     
             </div>
 
         </div>

@@ -38,8 +38,8 @@ const OutperformRivals = () => {
               </p>
 
               <p className="desc-2">
-                    Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor incididunt.
+                Climb to the top—75% of users never scroll past the first page of search results,
+                and we ensure your business takes center stage.
               </p>
 
             </div>
@@ -61,8 +61,8 @@ const OutperformRivals = () => {
               </p>
 
               <p className="desc-2">
-                    Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor incididunt.
+                Expand your digital footprint—93% of online experiences begin with a search engine, 
+                making our targeted strategies essential for brand discovery.
               </p>
 
             </div>

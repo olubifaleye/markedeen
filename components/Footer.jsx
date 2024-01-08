@@ -22,13 +22,13 @@ const Footer = () => {
   return (
     <>
         <nav className="footer">
-            <div className="flex items-center">
+            <div className="flex items-center pl-20">
                 <div className="nav_item">
                     All rights reserved [copyright sign] 2023, Markedeen
                 </div>
             </div>
 
-            <div className="flex items-center">
+            <div className="flex items-center pr-20">
                 
                 <div className="nav_item">
                     <a href="https://www.linkedin.com/company/markedeen/">
@@ -46,6 +46,12 @@ const Footer = () => {
                 <div className="nav_item">
                     <ScrollLink to="FAQ" spy={true} smooth={true} offset={-95} duration={500} className="link_item hover:border-b-4 max-md:hover:-mb-1">
                         <Link href="/faq">FAQ</Link>
+                    </ScrollLink>
+                </div>
+
+                <div className="nav_item">
+                    <ScrollLink to="Terms&Conditions" spy={true} smooth={true} offset={-95} duration={500} className="link_item hover:border-b-4 max-md:hover:-mb-1">
+                        <Link href="terms&conditions">Terms & Conditions</Link>
                     </ScrollLink>
                 </div>
             </div>

@@ -21,7 +21,7 @@ const OnlinePresence = () => {
         // Calculate and update the revenue field based on the inputs
         const updateRevenue = () => {
             // Get the values from the input fields
-            const productPrice = parseFloat(productPriceInput.value.replace("$", "").replace(",", ""));
+            const productPrice = parseFloat(productPriceInput.value.replace("£", "").replace(",", ""));
             const monthlyVisitors = parseFloat(monthlyVisitorsInput.value.replace(",", ""));
             const conversionRate = parseFloat(conversionRateInput.value.replace("%", ""));
             
@@ -29,7 +29,7 @@ const OnlinePresence = () => {
             let revenue = productPrice * monthlyVisitors * (conversionRate / 100);
             
             // Format the revenue and update the revenue field
-            revenue = "$" + revenue.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,");
+            revenue = "£" + revenue.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,");
             revenueInput.value = revenue;
         }
 
@@ -43,7 +43,7 @@ const OnlinePresence = () => {
             const value = productPriceInput.value;
             
             if (value) {
-                const formattedValue = "$" + parseFloat(value.replace(/[^0-9\.]/g, "")).toLocaleString("en-US", {maximumFractionDigits:2, minimumFractionDigits:2});
+                const formattedValue = "£" + parseFloat(value.replace(/[^0-9\.]/g, "")).toLocaleString("en-GB", {maximumFractionDigits:2, minimumFractionDigits:2});
                 productPriceInput.value = formattedValue;
             }
         }
@@ -52,7 +52,7 @@ const OnlinePresence = () => {
         function formatMonthlyVisitorsInput() {
             const value = monthlyVisitorsInput.value;
             if (value) {
-                const formattedValue = parseFloat(value.replace(/[^0-9]/g, "")).toLocaleString("en-US");
+                const formattedValue = parseFloat(value.replace(/[^0-9]/g, "")).toLocaleString("en-GB");
                 monthlyVisitorsInput.value = formattedValue;
             }
         }
@@ -61,7 +61,7 @@ const OnlinePresence = () => {
         function formatConversionRateInput() {
             const value = conversionRateInput.value;
             if (value) {
-                const formattedValue = parseFloat(value.replace(/[^0-9\.]/g, "")).toLocaleString("en-US", {maximumFractionDigits:2, minimumFractionDigits:2}) + "%";
+                const formattedValue = parseFloat(value.replace(/[^0-9\.]/g, "")).toLocaleString("en-GB", {maximumFractionDigits:2, minimumFractionDigits:2}) + "%";
                 conversionRateInput.value = formattedValue;
             }
         }
@@ -86,32 +86,32 @@ const OnlinePresence = () => {
 
                     <div className="vertical_container mt-6 mx-10 max-sm:mx-0">
                         <div className="boxes">
-                            <p className="sub_head_text !font-extrabold !text-white max-sm:my-12">
-                                100%
+                            <p className="sub_head_text !font-extrabold !text-white">
+                                90%
                             </p>
 
-                            <p className="desc !text-white pl-auto desc_online">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                        </div>
-
-                        <div className="boxes">
-                            <p className="sub_head_text !font-extrabold !text-white max-sm:my-12">
-                                60%
-                            </p>
-
-                            <p className="desc !text-white pl-auto desc_online">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            <p className="desc_online">
+                                Of consumers are online. 
                             </p>
                         </div>
 
                         <div className="boxes">
                             <p className="sub_head_text !font-extrabold !text-white max-sm:my-12">
-                                150%
+                                70%
                             </p>
 
-                            <p className="desc !text-white pl-auto desc_online">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            <p className="desc_online">
+                                Increase in reach.
+                            </p>
+                        </div>
+
+                        <div className="boxes">
+                            <p className="sub_head_text !font-extrabold !text-white max-sm:my-12">
+                                25%
+                            </p>
+
+                            <p className="desc_online">
+                                Increase in sales for local businesses that have an online presence experience.
                             </p>
                         </div>
 
@@ -139,7 +139,7 @@ const OnlinePresence = () => {
 
                             <div className='calculator_item'>
                                 <p className='sub_head_text !text-white !mt-10 !mb-3'>Product Price</p>
-                                <input type='text' className='input_item' defaultValue="$99.99" id='product-price' />
+                                <input type='text' className='input_item' defaultValue="£99.99" id='product-price' />
                             </div>
 
                             <div className='calculator_item'>
@@ -154,7 +154,7 @@ const OnlinePresence = () => {
 
                             <div className='calculator_item'>
                                 <p className='sub_head_text !text-white !mt-10 !mb-3'>Revenue</p>
-                                <input type='text' className='input_item' defaultValue="$19,998" id='revenue' disabled/>
+                                <input type='text' className='input_item' defaultValue="£19,998" id='revenue' disabled/>
                             </div>
 
                         </div>                     

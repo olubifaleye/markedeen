@@ -3,7 +3,7 @@
 //Imports
 import Link from "next/link";
 import '@styles/globals.css';
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 
@@ -211,10 +211,25 @@ const Contact = () => {
         }
     };
 
+    useEffect(() => {
+        // Create script element
+        const script = document.createElement('script');
+        script.src = 'https://link.msgsndr.com/js/form_embed.js';
+        script.async = true;
+    
+        // Append script to the document body
+        document.body.appendChild(script);
+    
+        // Clean up
+        return () => {
+          document.body.removeChild(script);
+        };
+      }, []); // Empty dependency array ensures this runs once on mount
+
 
   return (
     <section className='main' id="Contact">
-        <div className="our_philosophy_container">
+        <div className="contact_container">
             <div className="left_container">
 
                 <div className="max-md:text-center">
@@ -228,43 +243,27 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className="right_container bg-box pt-8 pl-6 p-6 rounded-3xl">
-                <form ref={form} onSubmit={sendEmail} className="contact-form" id="send-email">
-                    <div className="input-control">
-                        <label htmlFor="name" hidden className="label-content">Name</label>
-                        <input type="text" className="input-textarea" id="name" placeholder="Enter your name" autoComplete="off" name="name" onChange={handleChange}/>
-                        <br/>
-                        {visible && errors.name && <span className="error_label">{errors.name}</span>}
-                    </div>
+            <div className="right_container">
+                <iframe
+                    src="https://api.leadconnectorhq.com/widget/form/6XXCrxEfLuz87rdAyHpk"
+                    style={{width:"100%", height:"100%", border:"none"}}
+                    id="inline-6XXCrxEfLuz87rdAyHpk" 
+                    data-layout="{'id':'INLINE'}"
+                    data-trigger-type="alwaysShow"
+                    data-trigger-value=""
+                    data-activation-type="alwaysActivated"
+                    data-activation-value=""
+                    data-deactivation-type="neverDeactivate"
+                    data-deactivation-value=""
+                    data-form-name="Markedeen Contact Us"
+                    data-height="557"
+                    data-layout-iframe-id="inline-6XXCrxEfLuz87rdAyHpk"
+                    data-form-id="6XXCrxEfLuz87rdAyHpk"
+                    title="Markedeen Contact Us"
+                >
 
-                    <div className="input-control">
-                        <label htmlFor="email" hidden className="label-content">Email</label>
-                        <input type="text" className="input-textarea" id="email" placeholder="Enter your email" autoComplete="off" name="email" onChange={handleChange}/>
-                        <br/>
-                        {visible && errors.email && <span className="error_label">{errors.email}</span>}
-                    </div>   
-
-                    <div className="input-control">
-                        <label htmlFor="subject" hidden className="label-content">Subject</label>
-                        <input type="text" className="input-textarea" id="subject" placeholder="Subject: [Web Development, Reputation Management, Content Marketing, Social Media or Video Marketing]" autoComplete="off" name="subject" onChange={handleChange}/>
-                        <br />
-                        {visible && errors.subject && <span className="error_label">{errors.subject}</span>}
-                    </div>
-
-                    <div className="input-control">
-                        <label htmlFor="message" hidden className="label-content">Message</label>
-                        <textarea name="message" className="input-textarea" id="message" cols="15" rows="8" placeholder="Type message here..." autoComplete="off" onChange={handleChange}></textarea>
-                        <br />
-                        {visible && errors.message && <span className="error_label">{errors.message}</span>}
-                    </div>
-
-                    <nav className="button_container">
-                        <input type="submit" value="Submit" className="outline_btn_2" />
-                    </nav>
-
-                </form>
+                </iframe>
             </div>
-
         </div>
     </section>
   )

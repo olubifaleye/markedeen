@@ -1,6 +1,7 @@
 import '@styles/globals.css';
 import Nav from '@components/Nav';
 import Footer from '@components/Footer';
+import ChatWidget from '@components/ChatWidget';
 // import Provider from '@components/Provider';
 
 // Set metadata for layout file
@@ -17,6 +18,7 @@ const RootLayout = ({ children }) => {
             <main className=''>
                 <Nav />            
                 {children}
+                <ChatWidget />
                 <Footer />
 
             </main>

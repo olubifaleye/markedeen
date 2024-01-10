@@ -1,8 +1,14 @@
 import React from 'react'
+import Head from 'next/head'
 
 const ReadMore = () => {
   return (
-    <div>readMore</div>
+    <>
+      <Head>
+          <title>Read More</title>
+        </Head>
+      <div>readMore</div>
+    </>
   )
 }
 

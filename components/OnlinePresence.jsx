@@ -86,31 +86,31 @@ const OnlinePresence = () => {
 
                     <div className="vertical_container mt-6 mx-10 max-sm:mx-0">
                         <div className="boxes">
-                            <p className="sub_head_text !font-extrabold !text-white">
+                            <p className="desc_percentage">
                                 90%
                             </p>
 
-                            <p className="desc_online">
+                            <p className="desc_online desc_stats">
                                 Of consumers are online. 
                             </p>
                         </div>
 
                         <div className="boxes">
-                            <p className="sub_head_text !font-extrabold !text-white max-sm:my-12">
+                            <p className="desc_percentage">
                                 70%
                             </p>
 
-                            <p className="desc_online">
+                            <p className="desc_online desc_stats">
                                 Increase in reach.
                             </p>
                         </div>
 
                         <div className="boxes">
-                            <p className="sub_head_text !font-extrabold !text-white max-sm:my-12">
+                            <p className="desc_percentage">
                                 25%
                             </p>
 
-                            <p className="desc_online">
+                            <p className="desc_online desc_stats">
                                 Increase in sales for local businesses that have an online presence experience.
                             </p>
                         </div>
@@ -138,23 +138,27 @@ const OnlinePresence = () => {
                         <div className='vertical_container md:mb-10 max-md:mb-10'>
 
                             <div className='calculator_item'>
-                                <p className='sub_head_text !text-white !mt-10 !mb-3'>Product Price</p>
+                                <p className='calculator_text !text-white !mt-5 !mb-1'>Product Price</p>
                                 <input type='text' className='input_item' defaultValue="£99.99" id='product-price' />
+                                <label htmlFor="product-price" className='hidden'>Product Price</label>
                             </div>
 
                             <div className='calculator_item'>
-                                <p className='sub_head_text !text-white !mt-10 !mb-3'>Monthly Visitors</p>
-                                <input type='text' className='input_item' defaultValue="10,000" id='monthly-visitors' /> 
+                                <p className='calculator_text !text-white !mt-5 !mb-1'>Monthly Visitors</p>
+                                <input type='text' className='input_item' defaultValue="10,000" id='monthly-visitors' />
+                                <label htmlFor="monthly-visitors" className='hidden'>Monthly Visitors</label> 
                             </div>
 
                             <div className='calculator_item'>
-                                <p className='sub_head_text !text-white !mt-10 !mb-3'>Conversion Rate</p>
+                                <p className='calculator_text !text-white !mt-5 !mb-1'>Conversion Rate</p>
                                 <input type='text' className='input_item' defaultValue="2.00%" id='conversion-rate' />
+                                <label htmlFor="conversion-rate" className='hidden'>Conversion Rate</label>
                             </div>
 
                             <div className='calculator_item'>
-                                <p className='sub_head_text !text-white !mt-10 !mb-3'>Revenue</p>
+                                <p className='calculator_text !text-white !mt-5 !mb-1'>Revenue</p>
                                 <input type='text' className='input_item' defaultValue="£19,998" id='revenue' disabled/>
+                                <label htmlFor="revenue" className='hidden'>Revenue</label>
                             </div>
 
                         </div>                     

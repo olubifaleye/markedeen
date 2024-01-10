@@ -80,12 +80,12 @@ const OutperformRivals = () => {
               </IconContext.Provider>
 
               <p className='icon_text'>
-                More Credibility
+                Increased Credibility
               </p>
 
               <p className="desc-2">
-                    Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor incididunt.
+                Secure your brand's credibility—88% of consumers trust online reviews as much as personal recommendations, 
+                boosting your brand's trustworthiness.
               </p>
 
             </div>
@@ -107,8 +107,8 @@ const OutperformRivals = () => {
               </p>
 
               <p className="desc-2">
-                    Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor incididunt.
+                Safeguard your reputation—84% of people trust online reviews as much as friends, 
+                making a positive online presence a crucial asset.
               </p>
 
             </div>
@@ -130,8 +130,8 @@ const OutperformRivals = () => {
               </p>
 
               <p className="desc-2">
-                    Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor incididunt.
+                Enhance customer satisfaction—Customer retention increases by 5% for every 5% improvement in customer satisfaction, 
+                ensuring lasting relationships.
               </p>
 
             </div>
@@ -153,8 +153,8 @@ const OutperformRivals = () => {
               </p>
 
               <p className="desc-2">
-                    Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor incididunt.
+                Cultivate loyalty—A 5% increase in customer retention can boost profits by 25-95%, 
+                emphasizing the power of long-term customer relationships.
               </p>
 
             </div>
@@ -175,8 +175,8 @@ const OutperformRivals = () => {
               </p>
 
               <p className="desc-2">
-                    Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor incididunt. 
+                Stay connected—90% of consumers expect an immediate response, 
+                and our automated engagement ensures round-the-clock interaction.
               </p>
 
             </div>
@@ -197,8 +197,8 @@ const OutperformRivals = () => {
               </p>
 
               <p className="desc-2">
-                    Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor incididunt.
+                Expand your reach—Social media usage has surged to 4.2 billion users, 
+                offering a vast landscape for our multi-channel marketing strategies.
               </p>
 
             </div>
@@ -224,8 +224,8 @@ const OutperformRivals = () => {
               </p>
 
               <p className="desc-2">
-                    Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor incididunt.
+                Boost conversions—Leverage data-driven strategies as websites with 
+                personalized experiences see a 19% increase in conversion rates.
               </p>
 
             </div>
@@ -247,8 +247,8 @@ const OutperformRivals = () => {
               </p>
 
               <p className="desc-2">
-                    Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor incididunt.
+                Optimize costs—Businesses with marketing automation save up to 20% on operational costs, 
+                contributing to a more efficient and cost-effective strategy.
               </p>
 
             </div>

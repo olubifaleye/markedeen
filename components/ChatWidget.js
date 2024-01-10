@@ -1,8 +1,12 @@
 "use client"
+
+//Imports
 import { useEffect } from 'react';
 
 const ChatWidget = () => {
 
+
+  // Assigned variables for colours to be used as inline CSS
   const chatWidgetStyle = {
     '--chat-widget-primary-color': '#1b4571',
     '--chat-widget-active-color': '#1b4571',

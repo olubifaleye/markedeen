@@ -54,6 +54,7 @@
 
 .section-3{
   background-image: url('/assets/images/growth_partner_2.jpeg');
+
 }
 
 
@@ -75,18 +76,7 @@
   rotate: -60deg;
 }
 
-/* Contact Page Default CSS */
 
-.input-control:last-child{
-  margin-left: 1.5rem;
-}
-
-
-/* Success Quotes Default CSS */
-
-.quotes_image_icon{
-  border-radius: 10%;
-}
 
 /* Media Queries for all pages */
 
@@ -359,7 +349,7 @@
 /* Tailwind Styles for all pages */
 
 .top_head_section{
-  @apply text-center
+  @apply text-center;
 }
 
 .head_text {
@@ -391,7 +381,7 @@
 }
 
 .image{
-  @apply border-14 rounded-3xl border-box lg:mt-24
+  @apply border-14 rounded-3xl border-box lg:mt-24;
 }
 
 .flex-center {
@@ -420,7 +410,7 @@
 }
 
 .footer{
-  @apply py-4 px-6 flex items-center justify-between mb-5 bg-primary-blue h-full;
+  @apply lg:py-4 lg:px-6 lg:flex lg:items-center lg:justify-between bg-primary-blue max-md:flex-col h-full overflow-x-hidden ;
 }
 
 .nav_item{
@@ -469,11 +459,11 @@
 }
 
 .landing_pills{
-  @apply flex items-center lg:px-4 md:px-2 lg:py-4 md:py-3 z-10 w-fit rounded-2xl bg-box absolute;
+  @apply font-satoshi flex items-center lg:px-4 md:px-2 lg:py-4 md:py-3 z-10 w-fit rounded-2xl bg-box absolute max-md:hidden;
 }
 
 .outline_btn_2 {
-  @apply rounded-full bg-accent md:font-extrabold md:text-lg lg:py-3 lg:px-7 md:px-3 md:py-2.5 max-md:font-bold max-md:text-2xl max-md:py-3.5 max-md:px-7 max-sm:px-7 max-sm:py-3.5 max-sm:text-sm max-sm:font-bold text-black transition-all hover:bg-secondary-blue hover:text-black hover:shadow-lg duration-300 text-center font-inter flex items-center justify-center;
+  @apply font-satoshi rounded-full bg-accent md:font-extrabold md:text-lg lg:py-3 lg:px-7 md:px-3 md:py-2.5 max-md:font-bold max-md:text-2xl max-md:py-3.5 max-md:px-7 max-sm:px-7 max-sm:py-3.5 max-sm:text-sm max-sm:font-bold text-black transition-all hover:bg-secondary-blue hover:text-black hover:shadow-lg duration-300 text-center font-inter flex items-center justify-center;
 }
 
 
@@ -518,7 +508,7 @@
 }
 
 .vertical_container{
-  @apply grid grid-cols-1 justify-center lg:mb-20 items-center;  
+  @apply grid grid-cols-1 justify-center lg:mb-10 items-center;  
 }
 
 .boxes{
@@ -529,14 +519,25 @@
   @apply text-center;
 }
 
+.calculator_text {
+  @apply font-satoshi pt-2 pb-1 lg:text-xl md:text-xl max-md:text-lg font-semibold leading-[1.15] text-white;
+}
+
 .input_item{
-  @apply px-6 py-4 rounded-3xl text-xl font-extrabold hover:drop-shadow-lg hover:-translate-y-1 duration-300 w-3/4;
+  @apply px-4 py-3 rounded-3xl text-xl font-extrabold hover:drop-shadow-lg hover:-translate-y-1 duration-300 w-3/4;
 }
 
 .calculator_container{
-  @apply bg-primary-blue opacity-80 border-8 border-box rounded-3xl w-auto
+  @apply bg-primary-blue opacity-80 border-8 border-box rounded-3xl w-auto;
 }
 
+.desc_percentage {
+  @apply font-satoshi mt-8 mb-8 lg:text-2xl md:text-2xl max-md:text-xl font-extrabold leading-[1.15] text-white;
+}
+
+.desc_stats{
+  @apply font-satoshi lg:text-lg md:text-lg max-md:text-base font-medium leading-[1.15] text-white;
+}
 
 
 
@@ -558,7 +559,7 @@
 
 /* Contact Page Tailwind CSS*/
 
-.input-control{
+/* .input-control{
   @apply py-3;
 }
 
@@ -580,10 +581,10 @@
 
 .error_label{
   @apply text-rose-600 font-medium pl-4;
-}
+} */
 
 .contact_container{
-  @apply grid grid-cols-2 justify-center max-md:grid-cols-1 lg:mb-20 h-fit;  
+  @apply grid grid-cols-2 justify-center max-md:grid-cols-1;  
 }
 
 
@@ -600,7 +601,7 @@
 }
 
 .quotes_image{
-  @apply rounded-full border-4 border-box w-fit m-auto;
+  @apply w-fit m-auto;
 }
 
 

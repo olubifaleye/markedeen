@@ -7,7 +7,7 @@ import Marquee from "react-fast-marquee";
 
 const SuccessQuotes = () => {
   return (
-    <section className='main'>
+    <section className='main section-8' id='SuccessQuotes'>
 
         <div className='top_head_section'>
             <p className="head_text_span">
@@ -19,10 +19,10 @@ const SuccessQuotes = () => {
         <div className='quotes_container'>
           <div className='quotes_item'>
 
-            <div className='desc'>
-              "Markedeen has been an absolute game-changer for Vybe Promotions. 
-              Their expertise in running ads and orchestrating social media campaigns has significantly elevated our brand presence. 
-              Markedeen's collaboration with numerous events played a pivotal role in establishing 'Flava' as a recognized name in Edinburgh. 
+            <div className='desc-2'>
+              "Markedeen has completely transformed Vybe Promotions. 
+              Their experience in running advertisements and coordinating social media campaigns has considerably increased our brand's visibility. 
+              Markedeen's involvement at several events was critical in establishing 'Flava' as a known name in Edinburgh. 
               Their strategic approach and dedication to our success make them a valuable partner. We look forward to continuing this journey together!"
             </div>
 
@@ -32,10 +32,10 @@ const SuccessQuotes = () => {
             
             <div className='quotes_image'>
               <Image 
-                  src="/assets/images/VYBE LOGO.PNG"
-                  alt="Markedeen Landing Page Image"
-                  width={100}
-                  height={100}
+                  src="/assets/images/VybePromotions.jpeg"
+                  alt="Vybe Promotions Logo"
+                  width={50}
+                  height={50}
                   priority= 'true'                    
               />
             </div>
@@ -44,7 +44,7 @@ const SuccessQuotes = () => {
 
           <div className='quotes_item'>
 
-            <div className='desc'>
+            <div className='desc-2'>
                 "Being a DeenWave user has transformed the way I manage my business at 7sBeautyBar. 
                 The automation features provided by DeenWave streamline my processes, making my life as a lash tech and loctician much easier. 
                 From handling backend tasks to automating appointments, DeenWave has become an indispensable tool in my daily operations. 
@@ -57,8 +57,8 @@ const SuccessQuotes = () => {
 
             <div className='quotes_image'>
               <Image 
-                  src="/assets/images/Curved_solid_arrow.svg"
-                  alt="Markedeen Landing Page Image"
+                  src="/assets/images/BeautyBar.jpeg"
+                  alt="Beauty Bar Logo"
                   width={50}
                   height={50}
                   priority= 'true'                     
@@ -69,7 +69,7 @@ const SuccessQuotes = () => {
 
           <div className='quotes_item'>
 
-            <div className='desc'>
+            <div className='desc-2'>
                 "Markedeen played a crucial role in establishing CurryKits' online presence. 
                 Their expertise in Facebook Ads was instrumental in driving visibility and engagement. 
                 What truly stood out was their ability to establish a new TikTok shop within months of its opening. 
@@ -83,9 +83,9 @@ const SuccessQuotes = () => {
             <div className='quotes_image'>
               <Image 
                   src="/assets/images/CurryKits.jpeg"
-                  alt="Markedeen Landing Page Image"
-                  width={100}
-                  height={100}
+                  alt="CurryKits Logo"
+                  width={50}
+                  height={50}
                   priority= 'true'                   
               />
             </div>

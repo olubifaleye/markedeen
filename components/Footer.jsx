@@ -2,17 +2,6 @@
 
 //Allows movement between pages of the app
 import Link from "next/link";
-import dynamic from 'next/dynamic';
-
-const ScrollLink = dynamic(() => import('react-scroll').then((module) => module.Link), {
-  ssr: false,
-}); 
-
-//Auto optimizes images
-import Image from "next/image";
-
-//react hooks
-import { useState, useEffect, useRef } from 'react';
 
 import {FaLinkedin} from 'react-icons/fa';
 import { IconContext } from "react-icons";
@@ -22,16 +11,21 @@ const Footer = () => {
   return (
     <>
         <nav className="footer">
-            <div className="flex items-center pl-20">
+            {/* DIV container which contains copyright text for Markedeen */}
+            <div className="flex items-center lg:pl-20 max-md:flex-col">
                 <div className="nav_item">
-                    All rights reserved [copyright sign] 2023, Markedeen
+                    All rights reserved © 2023, Markedeen
                 </div>
             </div>
 
-            <div className="flex items-center pr-20">
+
+            {/* DIV container which contains a LinkedIn Icon which serves as a link to Markedeens LinkedIn page.
+                It also contains text links to the FAQ, Terms & Conditions and Privacy Policy pages.    
+            */}
+            <div className="flex max-md:flex-col items-center lg:pr-20">
                 
                 <div className="nav_item">
-                    <a href="https://www.linkedin.com/company/markedeen/">
+                    <a href="https://www.linkedin.com/company/markedeen/" title="Link to Markedeen LinkedIn Page">
                         <IconContext.Provider value={{ className: "IconSizes" }}>
                             <div className="flex-center">
                                 <div className='icon'>
@@ -44,15 +38,15 @@ const Footer = () => {
  
             
                 <div className="nav_item">
-                    <ScrollLink to="FAQ" spy={true} smooth={true} offset={-95} duration={500} className="link_item hover:border-b-4 max-md:hover:-mb-1">
-                        <Link href="/faq">FAQ</Link>
-                    </ScrollLink>
+                    <Link href="/faq" className="link_item hover:border-b-4 max-md:hover:-mb-1">FAQ</Link>
                 </div>
 
                 <div className="nav_item">
-                    <ScrollLink to="Terms&Conditions" spy={true} smooth={true} offset={-95} duration={500} className="link_item hover:border-b-4 max-md:hover:-mb-1">
-                        <Link href="terms&conditions">Terms & Conditions</Link>
-                    </ScrollLink>
+                    <Link href="terms&conditions" className="link_item hover:border-b-4 max-md:hover:-mb-1">Terms & Conditions</Link>
+                </div>
+
+                <div className="nav_item">
+                    <Link href="privacy" className="link_item hover:border-b-4 max-md:hover:-mb-1">Privacy Policy</Link>
                 </div>
             </div>
         </nav>

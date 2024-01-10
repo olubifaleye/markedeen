@@ -5,13 +5,14 @@ import '@styles/globals.css';
 import { useEffect } from 'react';
 import Image from 'next/image';
 
-import {FaChartBar, FaEye, FaCheck, FaAward, FaSmile, FaSortAmountUp, FaHandshake, FaChalkboardTeacher, FaFilter, FaHandHoldingUsd} from 'react-icons/fa';
+import { FaRegImages } from 'react-icons/fa6';
+import { GiTeamIdea } from "react-icons/gi";
 
 import { IconContext } from "react-icons";
 
 const Process = () => {
   return (
-    <section className='main' id='Process'>
+    <section className='main section-6' id='Process'>
         <div className='top_head_section'>
             <p className="head_text_span">
                 What's our process?
@@ -28,7 +29,7 @@ const Process = () => {
                     <IconContext.Provider value={{ className: "IconSizes" }}>
                         <div className="mt-2 flex-center">
                             <div className='icon'>
-                                <FaChartBar />
+                                <GiTeamIdea />
                             </div>
                         </div>
                     </IconContext.Provider>
@@ -50,7 +51,7 @@ const Process = () => {
                     <IconContext.Provider value={{ className: "IconSizes" }}>
                         <div className="mt-2 flex-center">
                             <div className='icon'>
-                                <FaChartBar />
+                                <FaRegImages />
                             </div>
                         </div>
                     </IconContext.Provider>
@@ -161,7 +162,7 @@ const Process = () => {
                     </IconContext.Provider>
 
                     <p className='icon_text'>
-                        8) Feedback and Reporting
+                        7) Feedback and Reporting
                     </p>
 
                     <p className="desc-2">
@@ -182,7 +183,7 @@ const Process = () => {
                     </IconContext.Provider>
 
                     <p className='icon_text'>
-                        7) Lead Generation and Conversion
+                        8) Lead Generation and Conversion
                     </p>
 
                     <p className="desc-2">

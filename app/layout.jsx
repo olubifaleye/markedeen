@@ -1,8 +1,13 @@
+"use client"
+
 import '@styles/globals.css';
 import Nav from '@components/Nav';
+import NavSmooth from '@components/NavSmooth';
 import Footer from '@components/Footer';
 import ChatWidget from '@components/ChatWidget';
-// import Provider from '@components/Provider';
+
+import { useEffect } from 'react'
+import { usePathname, useSearchParams } from 'next/navigation'
 
 // Set metadata for layout file
 export const metadata = {
@@ -12,11 +17,22 @@ export const metadata = {
 
 //Added in Nav component to layout higher order component
 const RootLayout = ({ children }) => {
+
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
+ 
+  useEffect(() => {
+    const url = `${pathname}`
+    console.log("Router Name: ", url)
+    // You can now use the current URL
+    // ...
+  }, [pathname, searchParams])
+
   return (
     <html lang='en'>
         <body className='bg-tertiary-blue'>
             <main className=''>
-                <Nav />            
+                {pathname === '/' ? <NavSmooth /> : <Nav />}    
                 {children}
                 <ChatWidget />
                 <Footer />

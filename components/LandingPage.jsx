@@ -10,13 +10,13 @@ import { IconContext } from "react-icons";
 
 const LandingPage = () => {
   return (
-    <section className="main" id="home">
+    <section className="main section-1" id="home">
         <div className="landing_container section-1">
             <div className="left_container">
                 <p className="head_text">
                     Unlock your
 
-                    <span className="head_text_span"> growth potential</span>
+                    <span className="head_text_span"> Growth Potential</span>
                 </p>
 
                 <p className="desc">

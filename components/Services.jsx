@@ -4,7 +4,12 @@ import '@styles/globals.css';
 import Image from 'next/image';
 import Link from 'next/link';
 
+
+// Icon Imports
 import {FaRegWindowMaximize, FaSortAmountUp, FaPencilAlt, FaConnectdevelop, FaVideo, FaSearchDollar, FaSearchengin, FaFilter, FaEnvelope, FaAd} from 'react-icons/fa';
+import { FaPeopleLine, FaFilterCircleDollar, FaCommentSms} from "react-icons/fa6";
+import { SiChatbot} from "react-icons/si";
+import { TbSettingsAutomation } from "react-icons/tb";
 
 import { IconContext } from "react-icons";
 
@@ -12,7 +17,7 @@ import { IconContext } from "react-icons";
 const Services = () => {
   return (
     <section className='main section-2' id='Services'>
-      <div className='top_head_section'>
+      <div className='top_head_section lg:mt-16'>
         <p className="head_text_span">
           What can we do for you?
         </p>
@@ -30,17 +35,18 @@ const Services = () => {
               <IconContext.Provider value={{ className: "IconSizes" }}>
                 <div className="mt-2 flex-center">
                   <div className='icon'>
-                    <FaRegWindowMaximize />
+                    <FaFilterCircleDollar />
                   </div>
                 </div>
               </IconContext.Provider>
 
               <p className='icon_text'>
-                Web Development
+                Funnel Optimization 
               </p>
 
               <p className="desc-2">
-                We create engaging, conversion-focused websites that seamlessly align with your brand
+                Optimize your funnel with us! From captivating landing pages to streamlined user journeys, 
+                we turn leads into loyal customers with our expertise.
               </p>
             </div> 
           </div>
@@ -50,7 +56,7 @@ const Services = () => {
               <IconContext.Provider value={{ className: "IconSizes" }}>
                 <div className="mt-2 flex-center">
                   <div className='icon'>
-                    <FaFilter />
+                    <FaPeopleLine />
                   </div>
                 </div>
               </IconContext.Provider>
@@ -71,17 +77,18 @@ const Services = () => {
               <IconContext.Provider value={{ className: "IconSizes" }}>
                 <div className="mt-2 flex-center">
                   <div className='icon'>
-                    <FaPencilAlt />
+                    <SiChatbot />
                   </div>
                 </div>
               </IconContext.Provider>
 
               <p className='icon_text'>
-                Content Marketing
+                AI Chatbot
               </p>
 
               <p className="desc-2">
-                We craft engaging social media content to build brand loyalty and drive meaningful interactions with your target audience
+                Enhance customer interactions, nurture/qualify leads and boost sales: 
+                Our AI Conversation Bot streamlines tasks and adapts to your business needs.
               </p>
 
             </div>
@@ -113,7 +120,7 @@ const Services = () => {
               <IconContext.Provider value={{ className: "IconSizes" }}>
                 <div className="mt-2 flex-center">
                   <div className='icon'>
-                    <FaVideo />
+                    <TbSettingsAutomation />
                   </div>
                 </div>
               </IconContext.Provider>
@@ -176,7 +183,7 @@ const Services = () => {
                 <IconContext.Provider value={{ className: "IconSizes" }}>
                   <div className="mt-2 flex-center">
                     <div className='icon'>
-                      <FaEnvelope />
+                      <FaCommentSms />
                     </div>
                   </div>
                 </IconContext.Provider>
@@ -194,11 +201,10 @@ const Services = () => {
           </div>
         </div>
 
-
         <Link href="/readmore" className='flex items-center justify-center'>
-          <p className='lg:text-xl md:text-xl max-md:text-lg font-semibold leading-[1.15] text-black'>
-            Read More
-          </p>
+            <p className='lg:text-xl md:text-xl max-md:text-lg font-satoshi font-semibold leading-[1.15] text-black'>
+              Read More
+            </p>
         </Link>
 
     </section>

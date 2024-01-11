@@ -1,22 +1,22 @@
 "use client"
 
-//imports
-import '@styles/globals.css';
-import { useEffect } from 'react';
-import Image from 'next/image';
-
-import { FaRegImages } from 'react-icons/fa6';
+//imports for icons
+import { FaRegImages, FaPeopleLine } from 'react-icons/fa6';
 import { GiTeamIdea } from "react-icons/gi";
-
+import { MdQueryStats } from "react-icons/md"; 
+import { FaChartBar, FaLayerGroup } from 'react-icons/fa';
+import { TbReportMoney, TbWorldWww } from 'react-icons/tb';
+import { VscVariableGroup } from "react-icons/vsc";
+ 
 import { IconContext } from "react-icons";
 
 const Process = () => {
   return (
     <section className='main section-6' id='Process'>
         <div className='top_head_section'>
-            <p className="head_text_span">
+            <h1 className="head_text_span">
                 What's our process?
-            </p>
+            </h1>
 
             <p className="sub_head_text">
                 Every client is unique, so we tailor our solutions specifically to you            
@@ -51,7 +51,7 @@ const Process = () => {
                     <IconContext.Provider value={{ className: "IconSizes" }}>
                         <div className="mt-2 flex-center">
                             <div className='icon'>
-                                <FaRegImages />
+                                <VscVariableGroup />
                             </div>
                         </div>
                     </IconContext.Provider>
@@ -72,7 +72,7 @@ const Process = () => {
                     <IconContext.Provider value={{ className: "IconSizes" }}>
                         <div className="mt-2 flex-center">
                             <div className='icon'>
-                                <FaChartBar />
+                                <FaLayerGroup />
                             </div>
                         </div>
                     </IconContext.Provider>
@@ -93,7 +93,7 @@ const Process = () => {
                     <IconContext.Provider value={{ className: "IconSizes" }}>
                         <div className="mt-2 flex-center">
                             <div className='icon'>
-                                <FaChartBar />
+                                <TbWorldWww />
                             </div>
                         </div>
                     </IconContext.Provider>
@@ -114,7 +114,7 @@ const Process = () => {
                     <IconContext.Provider value={{ className: "IconSizes" }}>
                         <div className="mt-2 flex-center">
                             <div className='icon'>
-                                <FaChartBar />
+                                <FaRegImages />
                             </div>
                         </div>
                     </IconContext.Provider>
@@ -135,7 +135,7 @@ const Process = () => {
                     <IconContext.Provider value={{ className: "IconSizes" }}>
                         <div className="mt-2 flex-center">
                             <div className='icon'>
-                                <FaChartBar />
+                                <MdQueryStats />
                             </div>
                         </div>
                     </IconContext.Provider>
@@ -156,7 +156,7 @@ const Process = () => {
                     <IconContext.Provider value={{ className: "IconSizes" }}>
                         <div className="mt-2 flex-center">
                             <div className='icon'>
-                                <FaChartBar />
+                                <TbReportMoney />
                             </div>
                         </div>
                     </IconContext.Provider>
@@ -177,7 +177,7 @@ const Process = () => {
                     <IconContext.Provider value={{ className: "IconSizes" }}>
                         <div className="mt-2 flex-center">
                             <div className='icon'>
-                                <FaChartBar />
+                                <FaPeopleLine />
                             </div>
                         </div>
                     </IconContext.Provider>

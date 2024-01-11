@@ -1,19 +1,18 @@
-import React from 'react'
-import Head from 'next/head'
+// Set metadata for Terms and Conditions Page
+export const metadata = {
+  title: "Terms & Conditions",
+  description: "Aberdeen Marketing Agency Terms and Conditions Page"
+}
 
 const TermsAndConditions = () => {
   return (
     <>
-      <Head>
-        <title>Terms & Conditions</title>
-      </Head>
-
       <section className='main' id='Terms&Conditions'>
 
           <div className='top_head_section pt-10'>
-            <p className="head_text_span">
+            <h1 className="head_text_span">
               Terms & Conditions
-            </p>
+            </h1>
 
           </div>
 

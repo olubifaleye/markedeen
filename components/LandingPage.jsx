@@ -2,10 +2,12 @@
 
 //Imports
 import { Link } from 'react-scroll';
-import '@styles/globals.css';
 import Image from "next/image";
 import {FaRegWindowMaximize, FaCircle, FaInstagram, FaFacebook, FaTwitterSquare} from 'react-icons/fa';
 import { IconContext } from "react-icons";
+
+//Image Imports
+import Logo from '../public/assets/images/Markedeen_Logo_2.jpeg';
 
 
 const LandingPage = () => {
@@ -13,11 +15,11 @@ const LandingPage = () => {
     <section className="main section-1" id="home">
         <div className="landing_container section-1">
             <div className="left_container">
-                <p className="head_text">
+                <h1 className="head_text">
                     Unlock your
 
                     <span className="head_text_span"> Growth Potential</span>
-                </p>
+                </h1>
 
                 <p className="desc">
                     Markedeen goes beyond the realms of traditional marketing — we're your end-to-end business growth partner. 
@@ -38,7 +40,7 @@ const LandingPage = () => {
                         </button>
                     </Link>
                     
-                    <Link to="Services" spy={true} smooth={true} offset={-100} duration={500} className="text-primary-blue lg:text-lg max-md:text-lg max-sm:text-base max-md:pt-6">
+                    <Link to="Services" spy={true} smooth={true} offset={-65} duration={500} className="text-primary-blue lg:text-lg max-md:text-lg max-sm:text-base max-md:pt-6">
                         What can we do for you?                
                     </Link>
 
@@ -73,8 +75,8 @@ const LandingPage = () => {
                         </IconContext.Provider>   
 
                         <Image 
-                            src="/assets/images/Markedeen_Logo_2.jpeg"
-                            alt="Markedeen Landing Page Image"
+                            src={Logo}
+                            alt=""
                             width={540}
                             height={480}
                             priority= 'true'

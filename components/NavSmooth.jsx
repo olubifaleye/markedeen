@@ -1,10 +1,14 @@
 "use client";
 
+// Dynamic import fr hydation for React Scroll
 import dynamic from 'next/dynamic';
 
 const ScrollLink = dynamic(() => import('react-scroll').then((module) => module.Link), {
   ssr: false,
 });
+
+//Import Images
+import NavLogo from '../public/assets/images/logo.png';
 
 //Auto optimizes images
 import Image from "next/image";
@@ -55,14 +59,15 @@ const NavSmooth = () => {
         <nav className="navbar">
             
             <ScrollLink to="home" spy={true} smooth={true} offset={-100} duration={500} className="flex">
-                <Image 
-                    src="/assets/images/logo.png"
-                    alt="Markedeen Logo"
-                    width={280}
-                    height={100}
-                    priority= 'true'
-                    className="object-contain h-auto"
-                />
+                <div className="NavContainer">
+                    <Image 
+                        src={NavLogo}
+                        alt="Markedeen Logo"
+                        width={774}
+                        height={234}
+                        priority= 'true'
+                    />
+                </div>
             </ScrollLink>
 
             <div onClick={handleClick} className="max-md:sticky max-md:top-7 max-md:right-10 md:hidden max-md:text-white">
@@ -76,14 +81,15 @@ const NavSmooth = () => {
 
                 <li>
                     <ScrollLink to="home" spy={true} smooth={true} offset={50} duration={500} className="md:hidden mr-10 mt-10">
-                        <Image 
-                            src="/assets/images/logo.png"
-                            alt="Markedeen Logo"
-                            width={300}
-                            height={100}
-                            priority= 'true'
-                            className="object-contain h-auto"
-                        />
+                        <div className="NavContainer">
+                            <Image 
+                                src={NavLogo}
+                                alt="Markedeen Logo"
+                                width={774}
+                                height={234}
+                                priority= 'true'
+                            />
+                        </div>
                     </ScrollLink>
                 </li>
 

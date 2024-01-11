@@ -1,23 +1,22 @@
-import React from 'react'
-import Head from 'next/head'
+// Set metadata for FAQ Page
+export const metadata = {
+  title: "FAQ",
+  description: "Aberdeen Marketing Agency FAQ Page"
+}
 
 const FAQ = () => {
   return (
     <>
-      <Head>
-        <title>FAQ</title>
-      </Head>
-
       <section className='main' id='FAQ'>
       
         <div className='top_head_section'>
-            <p className="head_text_span">
+            <h1 className="head_text_span">
               FAQ
-            </p>
+            </h1>
 
-            <p className="sub_head_text !mb-28">
+            <h2 className="sub_head_text !mb-28">
               Browse our FAQ for quick answers
-            </p>
+            </h2>
           </div>
 
           <div className='faq_container'>

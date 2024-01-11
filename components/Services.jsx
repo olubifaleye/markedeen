@@ -1,12 +1,10 @@
 "use client"
 
-import '@styles/globals.css';
-import Image from 'next/image';
 import Link from 'next/link';
 
 
 // Icon Imports
-import {FaRegWindowMaximize, FaSortAmountUp, FaPencilAlt, FaConnectdevelop, FaVideo, FaSearchDollar, FaSearchengin, FaFilter, FaEnvelope, FaAd} from 'react-icons/fa';
+import {FaConnectdevelop, FaFilter, FaEnvelope} from 'react-icons/fa';
 import { FaPeopleLine, FaFilterCircleDollar, FaCommentSms} from "react-icons/fa6";
 import { SiChatbot} from "react-icons/si";
 import { TbSettingsAutomation } from "react-icons/tb";
@@ -18,9 +16,9 @@ const Services = () => {
   return (
     <section className='main section-2' id='Services'>
       <div className='top_head_section lg:mt-16'>
-        <p className="head_text_span">
+        <h1 className="head_text_span">
           What can we do for you?
-        </p>
+        </h1>
 
         <p className="sub_head_text">
           Everything you need to build and grow you online presence
@@ -201,12 +199,17 @@ const Services = () => {
           </div>
         </div>
 
+        <div className='flex items-center justify-center'>
         <Link href="/readmore" className='flex items-center justify-center'>
-            <p className='lg:text-xl md:text-xl max-md:text-lg font-satoshi font-semibold leading-[1.15] text-black'>
-              Read More
-            </p>
-        </Link>
-
+            <button 
+              type="button" 
+              onClick={() => {}}
+              className="outline_btn"
+            >
+                Find out more
+            </button>
+          </Link>
+        </div>
     </section>
   )
 }

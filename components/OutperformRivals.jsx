@@ -1,19 +1,16 @@
 "use client"
 
-import '@styles/globals.css';
-import Image from 'next/image';
-
+// Icon Imports
 import {FaChartBar, FaEye, FaCheck, FaAward, FaSmile, FaSortAmountUp, FaHandshake, FaChalkboardTeacher, FaFilter, FaHandHoldingUsd} from 'react-icons/fa';
-
 import { IconContext } from "react-icons";
 
 const OutperformRivals = () => {
   return (
     <section className='main section-5' id='OutperformRivals'>
       <div className='top_head_section'>
-        <p className="head_text_span">
+        <h1 className="head_text_span">
           How can I beat my competition?
-        </p>
+        </h1>
 
         <p className="sub_head_text">
           In today's competitive landscape, an online presence gives you the edge

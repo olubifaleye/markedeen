@@ -1,18 +1,22 @@
 'use client'
 
 //imports
-import '@styles/globals.css';
 import Image from 'next/image';
 import Marquee from "react-fast-marquee";
+
+//Image Imports
+import VybePromotions from '../public/assets/images/VybePromotions.jpeg';
+import BeautyBar from '../public/assets/images/BeautyBar.jpeg';
+import CurryKits from '../public/assets/images/CurryKits.jpeg';
 
 const SuccessQuotes = () => {
   return (
     <section className='main section-8' id='SuccessQuotes'>
 
         <div className='top_head_section'>
-            <p className="head_text_span">
+            <h1 className="head_text_span">
                 Why do our customers use Markedeen?
-            </p>
+            </h1>
         </div>
 
       <Marquee pauseOnClick>
@@ -32,7 +36,7 @@ const SuccessQuotes = () => {
             
             <div className='quotes_image'>
               <Image 
-                  src="/assets/images/VybePromotions.jpeg"
+                  src={VybePromotions}
                   alt="Vybe Promotions Logo"
                   width={50}
                   height={50}
@@ -57,7 +61,7 @@ const SuccessQuotes = () => {
 
             <div className='quotes_image'>
               <Image 
-                  src="/assets/images/BeautyBar.jpeg"
+                  src={BeautyBar}
                   alt="Beauty Bar Logo"
                   width={50}
                   height={50}
@@ -82,7 +86,7 @@ const SuccessQuotes = () => {
 
             <div className='quotes_image'>
               <Image 
-                  src="/assets/images/CurryKits.jpeg"
+                  src={CurryKits}
                   alt="CurryKits Logo"
                   width={50}
                   height={50}

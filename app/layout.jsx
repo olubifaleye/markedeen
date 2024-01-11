@@ -1,6 +1,6 @@
 "use client"
 
-import '@styles/globals.css';
+import '../styles/globals.css';
 import Nav from '@components/Nav';
 import NavSmooth from '@components/NavSmooth';
 import Footer from '@components/Footer';
@@ -23,7 +23,6 @@ const RootLayout = ({ children }) => {
  
   useEffect(() => {
     const url = `${pathname}`
-    console.log("Router Name: ", url)
     // You can now use the current URL
     // ...
   }, [pathname, searchParams])

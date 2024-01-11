@@ -1,6 +1,6 @@
 
 //Imports
-import '@styles/globals.css';
+import '../styles/globals.css';
 import LandingPage from '@components/LandingPage';
 import Services from '@components/Services';
 import OurPhilosophy from '@components/OurPhilosophy';
@@ -10,17 +10,16 @@ import Process from '@components/Process';
 import Contact from '@components/Contact';
 import SuccessQuotes from '@components/SuccessQuotes';
 
-import Head from 'next/head';
+// Set metadata for Landing Page
+export const metadata = {
+  title: "Markedeen",
+  description: "Aberdeen Marketing Agency Home Page"
+}
 
 //Page component to house other "page" components for single page web application
 const Home = () => {
   return (
     <div className='main'>
-
-      <Head>
-        <title>Markedeen Home Page</title>
-      </Head>
-
       <LandingPage />
       <Services />
       <OurPhilosophy />

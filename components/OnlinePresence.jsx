@@ -1,7 +1,6 @@
 'use client'
 
 //imports
-import '@styles/globals.css';
 import { useEffect } from 'react';
 
 const OnlinePresence = () => {
@@ -70,25 +69,25 @@ const OnlinePresence = () => {
   return (
     <section className="main section-4" id='OnlinePresence'>
         <div className='top_head_section'>
-            <p className="head_text_span ml-24 text-left max-md:text-center max-md:ml-0">
+            <h1 className="head_text_span ml-24 text-left max-md:text-center max-md:ml-0">
                 Why is my online presence important?
-            </p>
+            </h1>
         </div>
 
         <div className="online_presence_container">
             <div className="left_container md:!pt-0">
                 <div className="vertical_container">
                     <div>
-                        <p className="sub_head_text text-center">
+                        <h2 className="sub_head_text text-center">
                             Here are a few reasons...
-                        </p>
+                        </h2>
                     </div>
 
                     <div className="vertical_container mt-6 mx-10 max-sm:mx-0">
                         <div className="boxes">
-                            <p className="desc_percentage">
+                            <h3 className="desc_percentage">
                                 90%
-                            </p>
+                            </h3>
 
                             <p className="desc_online desc_stats">
                                 Of consumers are online. 
@@ -96,9 +95,9 @@ const OnlinePresence = () => {
                         </div>
 
                         <div className="boxes">
-                            <p className="desc_percentage">
+                            <h3 className="desc_percentage">
                                 70%
-                            </p>
+                            </h3>
 
                             <p className="desc_online desc_stats">
                                 Increase in reach.
@@ -106,9 +105,9 @@ const OnlinePresence = () => {
                         </div>
 
                         <div className="boxes">
-                            <p className="desc_percentage">
+                            <h3 className="desc_percentage">
                                 25%
-                            </p>
+                            </h3>
 
                             <p className="desc_online desc_stats">
                                 Increase in sales for local businesses that have an online presence experience.
@@ -125,9 +124,9 @@ const OnlinePresence = () => {
             <div className="right_container">
                 <div className="vertical_container">
                     <div className="text-center">
-                        <p className="sub_head_text !my-0">
+                        <h2 className="sub_head_text !my-0">
                             How much more can I earn?
-                        </p>
+                        </h2>
 
                         <p className="sub_head_text lg:!text-lg">
                             Use this calculator to find out.

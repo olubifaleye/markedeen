@@ -16,6 +16,12 @@
   max-width: 100%;
 }
 
+.NavContainer{
+  position: relative;
+  width: 100%;
+  max-width: 280px; 
+  height: auto;
+}
 
 /* Landing Page Default CSS */
 
@@ -52,10 +58,15 @@
 
 /* Our Philosophy Page Default CSS */
 
-.section-3{
-  background-image: url('/assets/images/growth_partner_2.jpeg');
-
+.ourPhilosophyImage{
+  width: 100%; 
+  max-width: 650px;
+  height: auto;
 }
+
+/* .section-3{
+  background-image: url('/assets/images/growth_partner_2.jpeg');
+} */
 
 
 /* Online Presence Page Default CSS */
@@ -64,16 +75,15 @@
   margin: auto 0 !important;
 }
 
-
-/* Process Page Default CSS */
-
-.arrow{
-  rotate: 60deg;
-}
-
-.arrow_2{
-  transform: scaleY(-1);
-  rotate: -60deg;
+/* Read More Page Default CSS */
+.hero-image{
+  margin-top: 30px;
+  background-image: url('/assets/images/ReadMore.jpeg');
+  height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;     /* Vertically center */
 }
 
 
@@ -96,19 +106,6 @@
 
   .section-1{
     min-height: 60vh;
-  }
-
-  .arrow{
-    rotate: 60deg;
-    width: 45px;
-    height: 45px;
-  }
-  
-  .arrow_2{
-    transform: scaleY(-1);
-    rotate: -60deg;
-    width: 45px;
-    height: 45px;
   }
 }
 
@@ -138,19 +135,6 @@
   .right_container{
     margin-left: 0rem !important;
   }
-
-  .arrow{
-    rotate: 160deg;
-    width: 40px;
-    height: 40px;
-  }
-  
-  .arrow_2{
-    transform: scaleY(-1);
-    rotate: 20deg;
-    width: 40px;
-    height: 40px;
-  }
 }
 
 
@@ -171,19 +155,6 @@
   .landing-image{
     max-width: 300px;
   }
-
-  .arrow{
-    rotate: 160deg;
-    width: 40px;
-    height: 40px;
-  }
-  
-  .arrow_2{
-    transform: scaleY(-1);
-    rotate: 20deg;
-    width: 40px;
-    height: 40px;
-  }
 }
 
 
@@ -200,19 +171,6 @@
   .landing-image{
     max-width: 250px;
   }
-
-  .arrow{
-    rotate: 160deg;
-    width: 40px;
-    height: 40px;
-  }
-  
-  .arrow_2{
-    transform: scaleY(-1);
-    rotate: 20deg;
-    width: 40px;
-    height: 40px;
-  }
 }
 
 @media screen and (max-width: 400px) {
@@ -228,19 +186,6 @@
 
   .section-2{
     margin-top: 20%;
-  }
-
-  .arrow{
-    rotate: 160deg;
-    width: 40px;
-    height: 40px;
-  }
-  
-  .arrow_2{
-    transform: scaleY(-1);
-    rotate: 20deg;
-    width: 40px;
-    height: 40px;
   }
 
   .error_label{
@@ -267,26 +212,6 @@
     max-width: 230px;
   }
 
-  .arrow{
-    rotate: 160deg;
-    width: 40px;
-    height: 40px;
-  }
-  
-  .arrow_2{
-    transform: scaleY(-1);
-    rotate: 20deg;
-    width: 40px;
-    height: 40px;
-  }
-
-  .error_label{
-    padding-left: 0px !important;
-    display: inline-block;
-    width: 100%;
-    text-align:center;
-  }
-
 }
 
 
@@ -301,19 +226,6 @@
   .section-1{
     min-height: 70vh;
   }
-
-  .arrow{
-    rotate: 60deg;
-    width: 50px;
-    height: 50px;
-  }
-  
-  .arrow_2{
-    transform: scaleY(-1);
-    rotate: -60deg;
-    width: 50px;
-    height: 50px;
-  }
 }
 
 @media screen and (max-height: 550px){
@@ -321,18 +233,19 @@
   .navbar ul{
     overflow-y: scroll;
   }
+}
 
-  .arrow{
-    rotate: 160deg;
-    width: 40px;
-    height: 40px;
+@media screen and (max-height: 400px){
+
+  .right_container{
+    margin-left: -85px important;
   }
-  
-  .arrow_2{
-    transform: scaleY(-1);
-    rotate: 20deg;
-    width: 40px;
-    height: 40px;
+}
+
+@media screen and (max-height: 376px){
+
+  .right_container{
+    margin-left: -75px !important;
   }
 }
 
@@ -377,7 +290,7 @@
 }
 
 .desc-3 {
-  @apply text-base text-gray-600 sm:text-lg text-justify;
+  @apply text-base text-gray-600 sm:text-lg text-left;
 }
 
 .image{
@@ -459,7 +372,7 @@
 }
 
 .landing_pills{
-  @apply font-satoshi flex items-center lg:px-4 md:px-2 lg:py-4 md:py-3 z-10 w-fit rounded-2xl bg-box absolute max-md:hidden;
+  @apply font-satoshi flex items-center lg:px-4 md:px-2 lg:py-4 md:py-3 z-10 w-fit rounded-2xl bg-box absolute max-md:hidden hover:drop-shadow-lg hover:-translate-y-2 duration-300;
 }
 
 .outline_btn_2 {
@@ -495,7 +408,11 @@
 /* Our Philosophy Page Tailwind CSS */
 
 .our_philosophy_container{
-  @apply justify-center max-md:grid-cols-1 lg:mt-20 lg:mb-20;  
+  @apply grid grid-cols-2 justify-center max-md:grid-cols-1 lg:mt-20 lg:mb-20;  
+}
+
+.our_philosophy_right{
+  @apply flex items-center justify-center h-full mt-4 md:ml-4 relative;
 }
 
 

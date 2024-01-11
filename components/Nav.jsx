@@ -3,14 +3,11 @@
 //Allows movement between pages of the app
 import Link from "next/link";
 
-import dynamic from 'next/dynamic';
-
-const ScrollLink = dynamic(() => import('react-scroll').then((module) => module.Link), {
-  ssr: false,
-});
-
 //Auto optimizes images
 import Image from "next/image";
+
+//Import Images
+import NavLogo from '../public/assets/images/logo.png';
 
 //react hooks
 import { useState, useEffect, useRef } from 'react';
@@ -58,14 +55,15 @@ const Nav = () => {
         <nav className="navbar">
             
             <Link href="/" className="flex">
-                <Image 
-                    src="/assets/images/logo.png"
-                    alt="Markedeen Logo"
-                    width={280}
-                    height={100}
-                    priority= 'true'
-                    className="object-contain h-auto"
-                />
+                <div className="NavContainer">
+                    <Image 
+                        src={NavLogo}
+                        alt="Markedeen Logo"
+                        width={774}
+                        height={234}
+                        priority= 'true'
+                    />
+                </div>
             </Link>
 
             <div onClick={handleClick} className="max-md:sticky max-md:top-7 max-md:right-10 md:hidden max-md:text-white">
@@ -79,14 +77,15 @@ const Nav = () => {
 
                 <li>
                     <Link href="/" className="md:hidden mr-10 mt-10">
-                        <Image 
-                            src="/assets/images/logo.png"
-                            alt="Markedeen Logo"
-                            width={300}
-                            height={100}
-                            priority= 'true'
-                            className="object-contain h-auto"
-                        />
+                        <div className="NavContainer">
+                            <Image 
+                                src={NavLogo}
+                                alt="Markedeen Logo"
+                                width={774}
+                                height={234}
+                                priority= 'true'
+                            />
+                        </div>
                     </Link>
                 </li>
 

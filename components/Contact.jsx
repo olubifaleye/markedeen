@@ -1,9 +1,7 @@
 'use client'
 
 //Imports
-import Link from "next/link";
-import '@styles/globals.css';
-import { useRef, useState, useEffect } from "react";
+import { useEffect } from "react";
 
 const Contact = () => {
 
@@ -31,9 +29,9 @@ const Contact = () => {
             <div className="left_container">
 
                 <div className="max-md:text-center">
-                    <p className="head_text_span">
+                    <h1 className="head_text_span">
                         Ready to get started?
-                    </p>
+                    </h1>
 
                     <p className="desc m-auto">
                         Fill out the form and we'll get in touch with you

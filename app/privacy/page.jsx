@@ -1,19 +1,18 @@
-import React from 'react'
-import Head from 'next/head'
+// Set metadata for Privacy Page
+export const metadata = {
+  title: "Privacy Policy",
+  description: "Aberdeen Marketing Agency Privacy Policy Page"
+}
 
 const PrivacyPolicy = () => {
   return (
     <>
-      <Head>
-          <title>Privacy Policy</title>
-      </Head>
-
       <section className='main' id='Privacy'>
 
           <div className='top_head_section pt-10'>
-            <p className="head_text_span">
+            <h1 className="head_text_span">
               Privacy Policy
-            </p>
+            </h1>
 
           </div>
 

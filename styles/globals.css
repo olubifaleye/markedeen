@@ -19,6 +19,16 @@ html {
   max-width: 100%;
 }
 
+.mainSection {
+  width: 100vw;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 100%;
+}
+
 /* CSS Styling for the Logos in the Navigation bars */
 .NavContainer{
   position: relative;
@@ -115,10 +125,6 @@ html {
 
   .landing_container {
     grid-auto-rows: 300px 400px 1fr !important;
-  }
-
-  .right_container{
-    margin-bottom: 140px;
   }
 
   .section-1{
@@ -388,7 +394,7 @@ html {
 
 
 .landing_container {
-  @apply grid grid-cols-2 items-center justify-center max-md:grid-cols-1 max-md:mb-20;
+  @apply grid grid-cols-2 items-center justify-center max-md:grid-cols-1;
   grid-template-rows: repeat(auto-fit, minmax(300px, auto));
 }
 

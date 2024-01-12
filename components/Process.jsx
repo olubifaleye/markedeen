@@ -12,7 +12,7 @@ import { IconContext } from "react-icons";
 
 const Process = () => {
   return (
-    <section className='main section-6' id='Process'>
+    <section className='mainSection section-6' id='Process'>
         <div className='top_head_section'>
             <h1 className="head_text_span">
                 What's our process?

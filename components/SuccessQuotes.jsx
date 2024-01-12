@@ -11,10 +11,10 @@ import CurryKits from '../public/assets/images/CurryKits.jpeg';
 
 const SuccessQuotes = () => {
   return (
-    <section className='main section-8' id='SuccessQuotes'>
+    <section className='mainSection section-8' id='SuccessQuotes'>
 
         <div className='top_head_section'>
-            <h1 className="head_text_span">
+            <h1 className="head_text_span !mb-0">
                 Why do our customers use Markedeen?
             </h1>
         </div>

@@ -6,7 +6,7 @@ import { IconContext } from "react-icons";
 
 const OutperformRivals = () => {
   return (
-    <section className='main section-5' id='OutperformRivals'>
+    <section className='mainSection section-5' id='OutperformRivals'>
       <div className='top_head_section'>
         <h1 className="head_text_span">
           How can I beat my competition?

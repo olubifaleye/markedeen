@@ -22,7 +22,7 @@ const Contact = () => {
 
 
   return (
-    <section className='main section-7' id="Contact">
+    <section className='mainSection section-7' id="Contact">
         <div className="contact_container">
 
             {/* Left DIV container which contains text */}
@@ -40,7 +40,7 @@ const Contact = () => {
             </div>
 
             {/* Right DIV container which contains an IFRAME of a form component from leadconnectorhq */}
-            <div className="right_container">
+            <div className="right_container max-md:!ml-0 max-md:!mt-0">
                 <iframe
                     src="https://api.leadconnectorhq.com/widget/form/6XXCrxEfLuz87rdAyHpk"
                     style={{width:"100%", height:"100%", border:"none"}}

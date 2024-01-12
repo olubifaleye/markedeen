@@ -67,15 +67,21 @@ const OnlinePresence = () => {
     })
 
   return (
-    <section className="main section-4" id='OnlinePresence'>
-        <div className='top_head_section'>
+    <section className="mainSection section-4" id='OnlinePresence'>
+        <div className='top_head_section max-md:hidden'>
             <h1 className="head_text_span ml-24 text-left max-md:text-center max-md:ml-0">
                 Why is my online presence important?
             </h1>
         </div>
 
+        <div className=' lg:hidden top_head_section'>
+            <h1 className="head_text_span ml-24 text-left max-md:text-center max-md:ml-0">
+                Lets talk numbers...
+            </h1>
+        </div>
+
         <div className="online_presence_container">
-            <div className="left_container md:!pt-0">
+            <div className="left_container md:!pt-0 max-md:hidden">
                 <div className="vertical_container">
                     <div>
                         <h2 className="sub_head_text text-center">
@@ -121,9 +127,9 @@ const OnlinePresence = () => {
                 </div>
             </div>
 
-            <div className="right_container">
+            <div className="right_container max-md:!ml-0 max-md:!mt-0">
                 <div className="vertical_container">
-                    <div className="text-center">
+                    <div className="text-center max-md:hidden">
                         <h2 className="sub_head_text !my-0">
                             How much more can I earn?
                         </h2>
@@ -131,6 +137,12 @@ const OnlinePresence = () => {
                         <p className="sub_head_text lg:!text-lg">
                             Use this calculator to find out.
                         </p>
+                    </div>
+
+                    <div className="text-center lg:hidden mb-8">
+                        <h2 className="hidden max-md:sub_head_text max-md:!my-0">
+                            Use this calculator to find out how much more money you can earn.
+                        </h2>
                     </div>
 
                     <div className="calculator_container lg:mx-20 md:mx-10 max-md:mx-0">

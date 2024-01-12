@@ -14,7 +14,7 @@ import { IconContext } from "react-icons";
 
 const Services = () => {
   return (
-    <section className='main section-2' id='Services'>
+    <section className='mainSection section-2' id='Services'>
       <div className='top_head_section lg:mt-16'>
         <h1 className="head_text_span">
           What can we do for you?
@@ -204,7 +204,7 @@ const Services = () => {
             <button 
               type="button" 
               onClick={() => {}}
-              className="outline_btn"
+              className="outline_btn_2"
             >
                 Find out more
             </button>

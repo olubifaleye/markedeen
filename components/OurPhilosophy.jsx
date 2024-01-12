@@ -5,13 +5,13 @@ import GrowthPartnerBeside from '../public/assets/images/GrowthPartnerBeside.jpe
 
 const OurPhilosophy = () => {
   return (
-    <section className="main section-3 mt-20 mb-20" id="OurPhilosophy">
+    <section className="mainSection section-3 lg:mt-20 mb-20" id="OurPhilosophy">
         <div className="our_philosophy_container">
 
             <div className="left_container">
-                <div className="max-md:text-center">
+                <div className="max-md:text-left">
                     <div className='top_head_section'>
-                        <h1 className="head_text_span !text-left">
+                        <h1 className="head_text_span !text-left max-md:!text-center">
                             What is a Growth Partner?
                         </h1>
                     </div>

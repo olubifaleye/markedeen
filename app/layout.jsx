@@ -2,7 +2,7 @@ import '../styles/globals.css';
 import Nav from '@components/Nav';
 import NavSmooth from '@components/NavSmooth';
 import Footer from '@components/Footer';
-import ChatWidget from '@components/ChatWidget';
+// import ChatWidget from '@components/ChatWidget';
 
 import { useEffect } from 'react'
 import { usePathname, useSearchParams } from 'next/navigation'
@@ -31,7 +31,7 @@ const RootLayout = ({ children }) => {
             <main className=''>
                 {pathname === '/' ? <NavSmooth /> : <Nav />}    
                 {children}
-                <ChatWidget />
+                {/* <ChatWidget /> */}
                 <Footer />
 
             </main>

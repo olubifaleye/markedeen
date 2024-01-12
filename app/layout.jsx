@@ -1,17 +1,14 @@
+"use client"
+
 import '../styles/globals.css';
 import Nav from '@components/Nav';
 import NavSmooth from '@components/NavSmooth';
 import Footer from '@components/Footer';
-// import ChatWidget from '@components/ChatWidget';
+import ChatWidget from '@components/ChatWidget';
+import { metadata } from './layoutMetadata';
 
 import { useEffect } from 'react'
 import { usePathname, useSearchParams } from 'next/navigation'
-
-// Set metadata for layout file
-export const metadata = {
-    title: "Markedeen",
-    description: "Aberdeen Marketing Agency"
-}
 
 //Added in Nav component to layout higher order component
 const RootLayout = ({ children }) => {
@@ -31,7 +28,7 @@ const RootLayout = ({ children }) => {
             <main className=''>
                 {pathname === '/' ? <NavSmooth /> : <Nav />}    
                 {children}
-                {/* <ChatWidget /> */}
+                <ChatWidget />
                 <Footer />
 
             </main>

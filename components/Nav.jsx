@@ -7,7 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 //Import Images
-import NavLogo from '../public/assets/images/logo.png';
+import NavLogo from '../public/assets/images/logo.jpeg';
 
 //react hooks
 import { useState, useEffect, useRef } from 'react';

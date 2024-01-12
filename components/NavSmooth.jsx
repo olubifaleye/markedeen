@@ -8,7 +8,7 @@ const ScrollLink = dynamic(() => import('react-scroll').then((module) => module.
 });
 
 //Import Images
-import NavLogo from '../public/assets/images/logo.png';
+import NavLogo from '../public/assets/images/logo.jpeg';
 
 //Auto optimizes images
 import Image from "next/image";

@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 
-  Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
-*/
 
+html {
+  text-size-adjust: 100%; /* Adjust the percentage based on your needs */
+}
+
+
+/* CSS Styling for defauly pages and sections */
 .main {
   width: 100vw;
   justify-content: center;
@@ -16,6 +19,7 @@
   max-width: 100%;
 }
 
+/* CSS Styling for the Logos in the Navigation bars */
 .NavContainer{
   position: relative;
   width: 100%;
@@ -24,7 +28,6 @@
 }
 
 /* Landing Page Default CSS */
-
 .landing-image{
   border-radius: 10%;
   border-width: 14px;
@@ -87,7 +90,6 @@
 }
 
 
-
 /* Media Queries for all pages */
 
 /* Width */
@@ -109,7 +111,35 @@
   }
 }
 
-@media screen and (min-width: 640px) and (max-width: 940px) {
+@media screen and (min-width: 901px) and (max-width: 920px) {
+
+  .landing_container {
+    grid-auto-rows: 300px 400px 1fr !important;
+  }
+
+  .right_container{
+    margin-bottom: 140px;
+  }
+
+  .section-1{
+    min-height: 60vh;
+  }
+
+  .landing-image{
+    max-width: 330px;
+  }
+
+  .image-container-container{
+    margin: 0 auto;
+    width: 50%;
+  }
+  
+  .right_container{
+    margin-left: 22px !important;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 900px) {
 
   .landing_container {
     grid-auto-rows: 300px 400px 1fr !important;
@@ -133,7 +163,7 @@
   }
 
   .right_container{
-    margin-left: 0rem !important;
+    margin-left: -15px !important;
   }
 }
 
@@ -155,6 +185,10 @@
   .landing-image{
     max-width: 300px;
   }
+
+  .right_container{
+    margin-left: 40px !important;
+  }
 }
 
 
@@ -170,6 +204,10 @@
 
   .landing-image{
     max-width: 250px;
+  }
+
+  .right_container{
+    margin-left: 5px !important;
   }
 }
 
@@ -212,6 +250,10 @@
     max-width: 230px;
   }
 
+  .right_container{
+    margin-left: -12px !important;
+  }
+
 }
 
 
@@ -233,12 +275,9 @@
   .navbar ul{
     overflow-y: scroll;
   }
-}
-
-@media screen and (max-height: 400px){
 
   .right_container{
-    margin-left: -85px important;
+    margin-left: -58px !important;
   }
 }
 

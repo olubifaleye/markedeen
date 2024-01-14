@@ -13,7 +13,7 @@ import SuccessQuotes from '@components/SuccessQuotes';
 // Set metadata for Landing Page
 export const metadata = {
   title: "Markedeen",
-  description: "Aberdeen Marketing Agency Home Page"
+  description: "Markedeen goes beyond the realms of traditional marketing — we're your end-to-end business growth partner"
 }
 
 //Page component to house other "page" components for single page web application
